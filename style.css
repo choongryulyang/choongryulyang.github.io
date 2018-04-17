@@ -264,9 +264,7 @@ a:focus {
 }
 
 .light {
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-weight: 400;
 }
 
 .navbar-custom {
