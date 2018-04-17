@@ -250,9 +250,22 @@ a.alt {
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-
-
 }
+
+a.one:link {color:#3b5998;}
+a.one:hover,
+a.one:focus {
+    text-decoration: none;
+    color: #7B2323; 
+}
+
+a.two:link {color:#303030;}
+a.two:hover,
+a.two:focus {
+    text-decoration: none;
+    color: #7B2323; 
+}
+
 
 i.color {color:#3B5998;}
 
