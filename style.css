@@ -28,9 +28,8 @@ div.panel_body {
 
 
 div.panel_title {
-            font-size:90%;
             font-weight:700;
-			line-height:30pt;
+			line-height:25pt;
             text-align:left;
             color: #3B5998;
 }
