@@ -147,6 +147,9 @@ input {
 input[type=checkbox]{position: fixed;top:0;left:0;opacity: 0;}
 input[type=checkbox] + p,input[type=checkbox] + ul{display: none;}
 input[type=checkbox]:checked + p,input[type=checkbox]:checked + ul{display: block;}
+article label:before{content:'Show ';}
+article label + label,article a + label{margin-left: 1em;}
+
 input[type="radio"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
