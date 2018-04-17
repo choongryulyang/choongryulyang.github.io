@@ -257,18 +257,15 @@ a.alt {
     transition: all .1s ease-in-out;
 }
 
-a.one:link {color:#3b5998;}
-a.one:visited {color:#3b5998;}
+a.one: {color:#3b5998;}
 a.one:hover,
 a.one:focus {color:#7B2323; text-decoration: none}
 
-a.two:link {color:#303030;}
-a.two:visited {color:#303030;}
+a.two: {color:#303030;}
 a.two:hover,
 a.two:focus {color:#7B2323; text-decoration: none}
 
-a.author:link {color:#303030;text-decoration:underline;font-weight:bold}
-a.two:visited {color:#303030;text-decoration:underline;font-weight:bold}
+a.author: {color:#303030;text-decoration:underline;font-weight:bold}
 a.author:hover,
 a.author:focus {color:#7B2323; text-decoration: underline;font-weight:bold}
 
