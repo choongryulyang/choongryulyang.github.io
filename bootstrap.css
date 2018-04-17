@@ -5071,10 +5071,10 @@ a.list-group-item-danger.active:focus {
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .panel-body {
-  padding: 15px;
+  /*padding: 15px;*/
 }
 .panel-heading {
-  padding: 10px 15px;
+  /*padding: 10px 15px;*/
   border-bottom: 0px solid transparent;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -5086,7 +5086,6 @@ a.list-group-item-danger.active:focus {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  padding: 0px 0px ;
   color: inherit;
 }
 .panel-title > a {
