@@ -28,7 +28,8 @@ div.panel_body {
 
 
 div.panel_title {
-            font-size:120%;
+            font-size:17pt;
+            font-weight:700;
             text-align:left;
             color: #3B5998;
 }
@@ -227,7 +228,7 @@ p {
     margin: 0 0 25px;
     font-size: 16px;
     line-height: 1.5;
-    color: #3b5998;
+    color: #303030;
     text-align: left 
 }
 
