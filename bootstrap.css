@@ -144,7 +144,9 @@ input::-moz-focus-inner {
 input {
   line-height: normal;
 }
-input[type="checkbox"],
+input[type=checkbox]{position: fixed;top:0;left:0;opacity: 0;}
+input[type=checkbox] + p,input[type=checkbox] + ul{display: none;}
+input[type=checkbox]:checked + p,input[type=checkbox]:checked + ul{display: block;}
 input[type="radio"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
