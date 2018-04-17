@@ -28,6 +28,7 @@ div.panel_body {
 
 
 div.panel_title {
+			word-spacing:-1px;
             font-weight:700;
 			line-height:25pt;
             text-align:left;
