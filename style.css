@@ -258,20 +258,17 @@ a.alt {
 }
 
 a.one:link {color:#3b5998;}
+a.one:visited {color:#3b5998;}
 a.one:hover,
-a.one:focus {
-    text-decoration: none;
-    color: #7B2323; 
-}
+a.one:focus {color:#7B2323; text-decoration: none}
 
 a.two:link {color:#303030;}
+a.two:visited {color:#303030;}
 a.two:hover,
-a.two:focus {
-    text-decoration: none;
-    color: #7B2323; 
-}
+a.two:focus {color:#7B2323; text-decoration: none}
 
 a.author:link {color:#303030;text-decoration:underline;font-weight:bold}
+a.two:visited {color:#303030;text-decoration:underline;font-weight:bold}
 a.author:hover,
 a.author:focus {color:#7B2323; text-decoration: underline;font-weight:bold}
 
