@@ -244,6 +244,11 @@ a {
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #7B2323; 
+}
 
 a.alt {
     color: #303030;
@@ -266,18 +271,13 @@ a.two:focus {
     color: #7B2323; 
 }
 
-a.author:link {color:#303030;text-decoration:underline;font-weight: bold}
+a.author:link {color:#303030;text-decoration:underline;font-weight:bold}
 a.author:hover,
-a.author:focus {color: #7B2323; text-decoration: underline;font-weight:bold}
+a.author:focus {color:#7B2323; text-decoration: underline;font-weight:bold}
 
 
 i.color {color:#3B5998;}
 
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #7B2323; 
-}
 
 .light {
     font-weight: bold;
