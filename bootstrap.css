@@ -5071,7 +5071,7 @@ a.list-group-item-danger.active:focus {
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .panel-body {
-  padding: 0px;
+  padding: 5px;
 }
 .panel-heading {
   padding: 10px 0px;
@@ -5084,7 +5084,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-left: 0;
   color: inherit;
 }
