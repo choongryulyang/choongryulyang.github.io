@@ -28,9 +28,7 @@ div.panel_body {
 
 
 div.panel_title {
-			word-spacing:normal;
-            font-weight:400;
-			line-height:25pt;
+            font-size:90%;
             text-align:left;
             color: #3B5998;
 }
