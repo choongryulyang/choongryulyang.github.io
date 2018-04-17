@@ -5085,7 +5085,8 @@ a.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  margin-left: 0;
+  padding: 0px 0px ;
   color: inherit;
 }
 .panel-title > a {
