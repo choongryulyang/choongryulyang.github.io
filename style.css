@@ -266,6 +266,13 @@ a.two:focus {
     color: #7B2323; 
 }
 
+a.author:link {color:#303030;text-decoration:underline}
+a.author:hover,
+a.author:focus {
+    text-decoration: underline;
+    color: #7B2323; 
+}
+
 
 i.color {color:#3B5998;}
 
