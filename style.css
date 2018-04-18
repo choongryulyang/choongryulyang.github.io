@@ -258,19 +258,19 @@ a.alt {
 }
 
 a.one:link,
-a.one:visited {color:#3b5998;}
-a.one:hover,
-a.one:focus {color:#7B2323; text-decoration: none;}
+a.one:visited,
+a.one:focus {color:#3b5998;}
+a.one:hover,{color:#7B2323; text-decoration: none;}
 
 a.two:link,
-a.two:visited {color:#303030;}
-a.two:hover,
-a.two:focus {color:#7B2323; text-decoration: none;}
+a.two:visited,
+a.two:focus {color:#303030;}
+a.two:hover,{color:#7B2323; text-decoration: none;}
 
 a.author:link,
-a.author:visited {color:#303030;text-decoration:underline;font-weight:bold;}
-a.author:hover,
-a.author:focus {color:#7B2323; text-decoration: underline;font-weight:bold;}
+a.author:visited,
+a.author:focus{color:#303030;text-decoration:underline;font-weight:bold;}
+a.author:hover {color:#7B2323; text-decoration: underline;font-weight:bold;}
 
 
 i.color {color:#3B5998;}
