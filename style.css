@@ -269,8 +269,8 @@ a.two:hover,{color:#7B2323; text-decoration: none;}
 
 a.author:link,
 a.author:visited,
-a.author:focus{color:#3b5998;text-decoration:underline;font-weight:bold;}
-a.author:hover {color:#7B2323; text-decoration: underline;font-weight:bold;}
+a.author:focus{color:#3b5998;text-decoration:underline;}
+a.author:hover {color:#7B2323; text-decoration: underline;}
 
 
 i.color {color:#3B5998;}
