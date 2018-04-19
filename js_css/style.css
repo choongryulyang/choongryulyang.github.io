@@ -315,8 +315,9 @@ i.color {color:#3B5998;}
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #325d88 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
+    background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
+	text-weight: 700;
 }
 
 .navbar-custom .nav li a {
@@ -340,14 +341,14 @@ i.color {color:#3B5998;}
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 0px;
-        background: white ;    /*BACKGROUND COLOR OF HOMEPAGE NAVBAR*/
+        background: #3B5998 ;    /*BACKGROUND COLOR OF HOMEPAGE NAVBAR*/
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background 1s ease-in-out,padding 1s ease-in-out;
     }
     .top-nav-collapse {
         padding: 0;
-        background-color: white; /* COLOR OF NAVBAR BACKGROUND*/
+        background-color: #3B5998; /* COLOR OF NAVBAR BACKGROUND*/
         opacity: 1; 
         transition: background 1s ease-in-out,padding 1s ease-in-out;
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
