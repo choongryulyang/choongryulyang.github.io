@@ -315,7 +315,7 @@ i.color {color:#3B5998;}
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
+    background-color: #eeeeee ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
 }
 
