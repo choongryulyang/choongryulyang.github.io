@@ -317,7 +317,7 @@ a.author:hover{color:#303030;text-decoration:underline;}
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #000000 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
+    background-color: #303030 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
 }
 
