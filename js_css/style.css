@@ -323,6 +323,7 @@ a.author:hover{color:#303030;text-decoration:underline;}
 }
 
 .navbar-custom .nav li a {
+	color:#3B5998
 /*  -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
