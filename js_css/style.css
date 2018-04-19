@@ -324,12 +324,11 @@ i.color {color:#3b5998;}
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #ffffff ;/* COLOR OF SELCECTED TAB IN NAVBAR */
+    background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
 }
 
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
