@@ -317,7 +317,6 @@ i.color {color:#3B5998;}
     outline: none;
     background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
-	text-weight: 700;
 }
 
 .navbar-custom .nav li a {
@@ -333,7 +332,8 @@ i.color {color:#3B5998;}
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
-    background-color: rgba(39,62,84,0.01);
+    background-color: #3B5998;
+    font-weight: bold;
 }
 
 @media(min-width:767px) {
