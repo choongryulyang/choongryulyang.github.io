@@ -348,6 +348,7 @@ i.color {color:#3b5998;}
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background 1s ease-in-out,padding 1s ease-in-out;
+		color:#ffffff
     }
     .top-nav-collapse {
         padding: 0;
@@ -356,6 +357,7 @@ i.color {color:#3b5998;}
         transition: background 1s ease-in-out,padding 1s ease-in-out;
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	color:#ffffff
 
     }
 
