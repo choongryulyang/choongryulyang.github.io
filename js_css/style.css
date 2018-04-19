@@ -315,7 +315,7 @@ i.color {color:#3b5998;}
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
+    background-color: #ffffff ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
 }
 
@@ -332,7 +332,7 @@ i.color {color:#3b5998;}
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: #eeeeee;
 }
 
 @media(min-width:767px) {
