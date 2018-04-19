@@ -319,7 +319,12 @@ a.author:hover{color:#303030;text-decoration:underline;}
     outline: none;
     background-color: #ffffff ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
-	color:#3B5998
+  border-bottom: 5px solid #5bc0eb;
+  bottom: -10px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 .navbar-custom .nav li a {
@@ -335,7 +340,7 @@ a.author:hover{color:#303030;text-decoration:underline;}
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
-    background-color: #3B5998;
+    background-color: rgba(39,62,84,0.01); /*Don't touch: intentional error*/
 }
 
 @media(min-width:767px) {
