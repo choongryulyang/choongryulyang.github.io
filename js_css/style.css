@@ -314,17 +314,21 @@ a.author:hover{color:#303030;text-decoration:underline;}
 .navbar-custom a {
     color: #ffffff;
 }
+.navbar-nav > li {
+  float: left;
+  position: relative;
+}
 
 .navbar-custom .nav li.active {
     outline: none;
     background-color: #ffffff ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
-  border-bottom: 5px solid #5bc0eb;
-  bottom: -10px;
-  content: " ";
-  left: 0;
-  position: absolute;
-  right: 0;
+	border-bottom: 5px solid #ffffff;
+	bottom: 0px;
+	content: " ";
+	left: 0;
+	position: absolute;
+	right: 0;
 }
 
 .navbar-custom .nav li a {
