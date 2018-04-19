@@ -302,7 +302,7 @@ i.color {color:#3b5998;}
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 15px;
-    color: #fff;
+    color:#ffffff;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -327,7 +327,7 @@ i.color {color:#3b5998;}
     outline: none;
     background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
-	color: white
+	color:#ffffff
 }
 
 .navbar-custom .nav li a:hover,
@@ -336,7 +336,7 @@ i.color {color:#3b5998;}
     outline: 0;
     border-radius: 3px;
     background-color: #3B5998;
-	color: white
+	color:#ffffff
 }
 
 @media(min-width:767px) {
@@ -348,7 +348,6 @@ i.color {color:#3b5998;}
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background 1s ease-in-out,padding 1s ease-in-out;
-		color: white
     }
     .top-nav-collapse {
         padding: 0;
@@ -357,7 +356,6 @@ i.color {color:#3b5998;}
         transition: background 1s ease-in-out,padding 1s ease-in-out;
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-		color: white
 
     }
 
