@@ -336,9 +336,6 @@ i.color {color:#3b5998;}
     background-color: #3B5998;
 }
 
-.navbar-custom .nav li a.page-scroll:link,
-.navbar-custom .nav li a.page-scroll:visited{color:#cccccc;}
-.navbar-custom .nav li a.page-scroll:hover,
 .navbar-custom .nav li a.page-scroll:active{color:#ffffff;}
 
 @media(min-width:767px) {
