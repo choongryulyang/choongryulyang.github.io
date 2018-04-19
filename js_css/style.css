@@ -280,6 +280,7 @@ i.color {color:#3b5998;}
     font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+	color:white
 }
 
 .navbar-custom {
@@ -313,18 +314,20 @@ i.color {color:#3b5998;}
     color: #3B5998;
 }
 
-.navbar-custom .nav li.active {
-    outline: none;
-    background-color: #eeeeee ;/* COLOR OF SELCECTED TAB IN NAVBAR */
-    border-radius: 2px;
-}
 
 .navbar-custom .nav li a {
+	color: #dddddd
 /*  -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
     border-radius: 30px;*/
+}
 
+.navbar-custom .nav li.active {
+    outline: none;
+    background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
+    border-radius: 2px;
+	color: #white
 }
 
 .navbar-custom .nav li a:hover,
@@ -332,7 +335,8 @@ i.color {color:#3b5998;}
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
-    background-color: #eeeeee;
+    background-color: #3B5998;
+	color: #white
 }
 
 @media(min-width:767px) {
