@@ -328,7 +328,6 @@ i.color {color:#3b5998;}
 }
 
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
