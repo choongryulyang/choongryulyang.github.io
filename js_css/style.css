@@ -239,7 +239,7 @@ p {
 }
 
 a {
-    /*color:#303030;*/
+    color:#303030;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
