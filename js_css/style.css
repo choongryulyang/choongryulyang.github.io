@@ -247,7 +247,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #7B2323; 
+    color: #3b5998; 
 }
 
 a.alt {
@@ -258,19 +258,19 @@ a.alt {
 }
 
 a.one:link,
-a.one:visited{color:#3b5998;}
-a.one:focus,
-a.one:hover{color:#7B2323; text-decoration: none;}
+a.one:visited,
+a.one:focus{color:#3b5998;}
+a.one:hover{color:#647497; text-decoration: none;}
 
 a.two:link,
-a.two:visited{color:#303030;}
-a.two:focus, 
-a.two:hover{color:#7B2323; text-decoration: none;}
+a.two:visited,
+a.two:focus{color:#303030;}
+a.two:hover{color:#cccccc; text-decoration: none;}
 
 a.author:link,
-a.author:visited{color:#3b5998;text-decoration:underline;}
-a.author:focus,
-a.author:hover{color:#7B2323; text-decoration: underline;}
+a.author:visited,
+a.author:focus{color:#3b5998;text-decoration:underline;}
+a.author:hover{color:#647497; text-decoration: underline;}
 
 
 i.color {color:#3B5998;}
