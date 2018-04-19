@@ -244,11 +244,6 @@ a {
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #3b5998; 
-}
 
 a.alt {
     color: #303030;
@@ -256,6 +251,15 @@ a.alt {
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #3b5998; 
+}
+
+i.color {color:#3b5998;}
+
 
 a.one:link,
 a.one:visited,
@@ -271,8 +275,6 @@ a.author:link,
 a.author:visited,
 a.author:focus{color:#3b5998;text-decoration:underline;}
 a.author:hover{color:#303030;text-decoration:underline;}
-
-i.color {color:#3b5998;}
 
 
 .light {
@@ -310,13 +312,14 @@ i.color {color:#3b5998;}
 }
 
 .navbar-custom a {
-    color: #3B5998;
+    color: #ffffff;
 }
 
 .navbar-custom .nav li.active {
     outline: none;
     background-color: #ffffff ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
+	color:#3B5998
 }
 
 .navbar-custom .nav li a {
