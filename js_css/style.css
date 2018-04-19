@@ -272,12 +272,6 @@ a.author:visited,
 a.author:focus{color:#3b5998;text-decoration:underline;}
 a.author:hover{color:#303030;text-decoration:underline;}
 
-a.page-scroll:link,
-a.page-scroll:visited{color:#cccccc;}
-a.page-scroll:focus{color:#3b5998;text-decoration:underline;}
-a.page-scroll:hover,
-a.page-scroll:active{color:#ffffff;}
-
 i.color {color:#3b5998;}
 
 
@@ -341,6 +335,11 @@ i.color {color:#3b5998;}
     border-radius: 3px;
     background-color: #3B5998;
 }
+
+.navbar-custom .nav li a.page-scroll:link,
+.navbar-custom .nav li a.page-scroll:visited{color:#cccccc;}
+.navbar-custom .nav li a.page-scroll:hover,
+.navbar-custom .nav li a.page-scroll:active{color:#ffffff;}
 
 @media(min-width:767px) {
     .navbar {
