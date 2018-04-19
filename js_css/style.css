@@ -332,8 +332,7 @@ i.color {color:#3B5998;}
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
-    background-color: #3B5998;
-    font-weight: bold;
+    background-color: #eeeeee;
 }
 
 @media(min-width:767px) {
