@@ -324,7 +324,7 @@ i.color {color:#3b5998;}
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #3B5998 ;/* COLOR OF SELCECTED TAB IN NAVBAR */
+    background-color: #ffffff ;/* COLOR OF SELCECTED TAB IN NAVBAR */
     border-radius: 2px;
 }
 
@@ -333,7 +333,7 @@ i.color {color:#3b5998;}
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
-    background-color: #3B5998;
+    background-color: #ffffff;
 }
 
 @media(min-width:767px) {
@@ -345,7 +345,6 @@ i.color {color:#3b5998;}
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background 1s ease-in-out,padding 1s ease-in-out;
-		color:#ffffff
     }
     .top-nav-collapse {
         padding: 0;
@@ -354,7 +353,6 @@ i.color {color:#3b5998;}
         transition: background 1s ease-in-out,padding 1s ease-in-out;
         -webkit-transition: background 1s ease-in-out,padding 1s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-	color:#ffffff
 
     }
 
