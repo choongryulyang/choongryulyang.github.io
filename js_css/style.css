@@ -287,7 +287,7 @@ a.author:hover{color:#303030;text-decoration:underline;}
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    background-color: #bf5700;
+    background-color: #3b5998;
 
 }
 
@@ -334,7 +334,7 @@ a.author:hover{color:#303030;text-decoration:underline;}
 .navbar-custom .nav li a.active {
     outline: 0;
     border-radius: 3px;
-    background-color: rgba(39,62,84,0.01); /*Don't touch: intentional error*/
+    background-color: rgba(39,62,84,0.01); 
 }
 
 @media(min-width:767px) {
