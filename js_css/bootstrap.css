@@ -3825,7 +3825,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .tab-pane {
   display: none;
-  visibility: hidden;
+  visibility: visible;
 }
 .tab-content > .active {
   display: block;
@@ -3875,11 +3875,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block !important;
     height: 50px !important;
     padding-bottom: 0;
-    overflow: hidden !important;
+    overflow: visible !important;
     visibility: visible !important;
   }
   .navbar-collapse.in {
-    overflow-y: hidden;
+    overflow-y: visible;
   }
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
