@@ -3837,7 +3837,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar {
-  position: fixed;
+  position: relative;
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
@@ -3873,7 +3873,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-collapse.collapse {
     display: block !important;
-    height: 50px !important;
+    height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
     visibility: visible !important;
@@ -3890,13 +3890,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
-  max-height: 50px;
-  
+  max-height: 340px;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
-    max-height: 50px;
+    max-height: 200px;
   }
 }
 .container > .navbar-header,
@@ -3935,7 +3934,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
-	max-height: 50px;
   }
 }
 .navbar-fixed-top {
