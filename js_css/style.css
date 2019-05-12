@@ -288,7 +288,6 @@ a.author:hover{color:#303030;text-decoration:underline;}
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     background-color: #3b5998;
-
 }
 
 .navbar-custom .navbar-brand {
@@ -297,7 +296,6 @@ a.author:hover{color:#303030;text-decoration:underline;}
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;
-
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {

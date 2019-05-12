@@ -3173,9 +3173,9 @@ tbody.collapse.in {
   -webkit-transition-timing-function: ease;
        -o-transition-timing-function: ease;
           transition-timing-function: ease;
-  -webkit-transition-duration: .35s;
-       -o-transition-duration: .35s;
-          transition-duration: .35s;
+  -webkit-transition-duration: .01s;
+       -o-transition-duration: .01s;
+          transition-duration: .01s;
   -webkit-transition-property: height, visibility;
        -o-transition-property: height, visibility;
           transition-property: height, visibility;
