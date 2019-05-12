@@ -3170,9 +3170,15 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: none;
-  transition: none;
-  display: none;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+       -o-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+       -o-transition-property: height, visibility;
+          transition-property: height, visibility;
 }
 .caret {
   display: inline-block;
@@ -3855,13 +3861,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
 }
-.no-transition {
-  -webkit-transition: height 0.01s;
-  -moz-transition: height 0.01s;
-  -ms-transition: height 0.01s;
-  -o-transition: height 0.01s;
-  transition: height 0.01s;
-}
 .navbar-collapse.in {
   overflow-y: auto;
 }
@@ -3887,12 +3886,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-bottom .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
-	max-height: 200px;
   }
 }
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
-  max-height: 200px;
+  max-height: 340px;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
