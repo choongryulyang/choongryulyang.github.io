@@ -339,7 +339,7 @@ a.author:hover{color:#303030;text-decoration:underline;}
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 0;
         border-bottom: 0;
         letter-spacing: 0px;
         background: #3B5998 ;    /*BACKGROUND COLOR OF HOMEPAGE NAVBAR*/
