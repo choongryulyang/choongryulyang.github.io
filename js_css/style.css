@@ -337,6 +337,10 @@ a.author:hover{color:#303030;text-decoration:underline;}
     background-color: rgba(39,62,84,0.01); 
 }
 
+.navbar {
+	padding: 0;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 0;
