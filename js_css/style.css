@@ -268,13 +268,13 @@ a.one:hover{color:#303030;text-decoration:underline;}
 
 a.two:link,
 a.two:visited,
-a.two:focus{color:#3b5998;text-decoration:none;}
+a.two:focus{color:#303030;text-decoration:none;}
 a.two:hover{color:#3b5998;text-decoration:underline;}
 
 a.author:link,
 a.author:visited,
-a.author:focus{color:#3b5998;text-decoration;}
-a.author:hover{color:#303030;text-decoration;}
+a.author:focus{color:#3b5998;text-decoration:none;}
+a.author:hover{color:#303030;text-decoration:none;}
 
 
 .light {
