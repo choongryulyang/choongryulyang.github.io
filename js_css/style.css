@@ -266,13 +266,13 @@ a.one:visited,
 a.one:focus{color:#3b5998;text-decoration:none;}
 a.one:hover{color:#303030;text-decoration:underline;}
 
-a.two:link{color:#3b5998;text-decoration:none;},
 a.two:visited,
+a.two:link{color:#3b5998;text-decoration:none;}
 a.two:focus{color:#3b5998;text-decoration:none;}
 a.two:hover{color:#303030;text-decoration:underline;}
 
-a.author:link{color:#3b5998;text-decoration:none;},
 a.author:visited,
+a.author:link{color:#3b5998;text-decoration:none;}
 a.author:focus{color:#3b5998;text-decoration:none;}
 a.author:hover{color:#303030;text-decoration:underline;}
 
