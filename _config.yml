@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Choongryul Yang
-email: c.yang@utexas.edu
+email: cryang1224@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    I am an Economist at the Federal Reserve Board of Governors. I received my Ph.D. in Economics from the University of Texas at Austin in 2020.
+    I am an Economist at the Federal Reserve Board of Governors.
     My research focuses on macroeconomic topics, including monetary and fiscal policy, expectations formation, and business cycle fluctuations.
 baseurl: "" 
 url: "https://choongryulyang.github.io/" 
