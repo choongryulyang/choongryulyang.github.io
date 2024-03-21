@@ -3,7 +3,7 @@ const fontname = "Roboto+Mono";
 const fontweights = [300, 400]
 
 // Color properties
-const basecolor = "#777";
+const basecolor = "#555";
 const accentcolor = "#007";
 const highlightcolor = "#111";
 
@@ -12,7 +12,7 @@ const highlightcolor = "#111";
 // const highlight = "#111";
 
 // Body properties
-const bodyfontweight = 400;
+const bodyfontweight = 450;
 const bodyfontsize = "12pt";
 const backgroundcolor = "#FFFAF0";
 
@@ -90,8 +90,14 @@ $("body").css("background-color", backgroundcolor);
 // $("a:hover").css("text-decoration", ahoverdecoration);
 
 $(".menulink").css("color", menucolor);
+$(".menulink").css("font-weight", "300");
 $(".menulink").css("font-size", menufontsize);
 $(".menulink").css("text-decoration", menudecoration);
+
+$(".menulink2").css("color", menucolor);
+$(".menulink2").css("font-weight", "500");
+$(".menulink2").css("font-size", menufontsize);
+$(".menulink2").css("text-decoration", headerdecoration);
 
 $(".header").css("color", headercolor);
 $(".header").css("font-size", headerfontsize);
