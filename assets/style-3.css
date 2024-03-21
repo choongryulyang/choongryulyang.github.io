@@ -1,0 +1,121 @@
+.instilogo {
+    height: 50px;
+    filter: grayscale(20%);
+}
+
+a:hover {
+    /* font-weight: 400; */
+    text-decoration: underline;
+    transition-duration: 0.05s;
+    transition-timing-function: linear;
+    /* color: #444; */
+}
+
+
+.noter {
+    font-size: 9pt;
+}
+
+.tagsep {
+    padding: 4px;
+}
+
+.tag {
+    font-weight: 500;
+    padding-right: 2px;
+    color:#007;
+}
+.tag:hover {
+    padding-right: 2px;
+    color:darkblue;
+}
+.journal {
+    padding-right: 2px;
+    color:darkred;
+}
+
+.journal:hover {
+    padding-right: 2px;
+    color:brown;
+}
+.author {
+    font-weight: 450;
+    padding-right: 2px;
+    color:#111;
+}
+.author:hover {
+    padding-right: 2px;
+    color:#111;
+}
+.confshort {
+    font-weight: 300;
+}
+
+.conf {
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.paper {
+    border-left: 1px solid #ddd;
+}
+
+.menulink:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.profilepic {
+    width: 180px;
+    border-radius: 40%;
+    filter: grayscale(20%);
+}
+
+
+input[type=checkbox]{position: fixed;top:0;left:0;opacity: 0;}
+input[type=checkbox] + p,input[type=checkbox] + ul{display: none;}
+input[type=checkbox]:checked + p,input[type=checkbox]:checked + ul{display: block;}
+.checkbox label {
+    font-weight: 500;
+    cursor: pointer;
+    color:#007;
+    padding-bottom: -10px;
+    height: 1px;
+}
+
+@media (min-width: 768px) {
+    .fixed-posi {
+        /* width: 50%;
+            margin-left: 50%;
+            min-height:100%; */
+        position: fixed;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .allstuff {
+        padding-top: 0px !important;
+    }
+
+    .allstuffp {
+        padding-top: 0px !important;
+    }
+
+    .profilepic {
+        width: 220px;
+        border-radius: 40%;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        /* filter: grayscale(100%); */
+    }
+
+    .menur {
+        padding-top: 18px !important;
+    }
+
+}
+
+/* .thisauthor {
+          color: #111;
+          text-decoration: underline;
+    } */
