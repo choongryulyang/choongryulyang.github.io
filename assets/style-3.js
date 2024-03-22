@@ -90,12 +90,12 @@ $("body").css("background-color", backgroundcolor);
 // $("a:hover").css("text-decoration", ahoverdecoration);
 
 $(".menulink").css("color", menucolor);
-$(".menulink").css("font-weight", "300");
+$(".menulink").css("font-weight", "350");
 $(".menulink").css("font-size", menufontsize);
 $(".menulink").css("text-decoration", menudecoration);
 
-$(".menulink2").css("color", menucolor);
-$(".menulink2").css("font-weight", "500");
+$(".menulink2").css("color", "#007");
+$(".menulink2").css("font-weight", "700");
 $(".menulink2").css("font-size", menufontsize);
 $(".menulink2").css("text-decoration", headerdecoration);
 
