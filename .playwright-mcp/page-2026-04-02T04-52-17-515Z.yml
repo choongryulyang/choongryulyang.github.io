@@ -1,0 +1,458 @@
+- generic [ref=e1]:
+  - button "Toggle dark mode" [active] [ref=e2] [cursor=pointer]:
+    - generic [ref=e3]: 
+    - text: 
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - img [ref=e8]
+      - paragraph [ref=e9]: Choongryul Yang
+      - paragraph [ref=e10]:
+        - text: Research Economist and Assistant Advisor
+        - text: Federal Reserve Bank of Atlanta
+      - link "CV (February 2026)" [ref=e12] [cursor=pointer]:
+        - /url: cv/ChoongryulYang_CV.pdf
+        - generic [ref=e13]: 
+        - text: CV (February 2026)
+      - generic [ref=e14]: Profiles
+      - generic [ref=e15]:
+        - link "Google Scholar" [ref=e16] [cursor=pointer]:
+          - /url: https://scholar.google.com/citations?user=BCNGJ30AAAAJ&hl=en
+          - generic [ref=e17]: 
+        - link "LinkedIn" [ref=e18] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/choongryul-yang/
+          - generic [ref=e19]: 
+        - link "Twitter" [ref=e20] [cursor=pointer]:
+          - /url: https://twitter.com/_ChoongYang
+          - generic [ref=e21]: 
+        - link "DRIPs.jl" [ref=e22] [cursor=pointer]:
+          - /url: https://afrouzi.com/DRIPs.jl/dev/
+          - generic [ref=e23]: 
+      - generic [ref=e24]: Contact
+      - paragraph [ref=e25]:
+        - link [ref=e26] [cursor=pointer]:
+          - /url: mailto:cryang1224@gmail.com
+          - generic [ref=e27]: 
+        - text: cryang1224@gmail.com
+        - link [ref=e28] [cursor=pointer]:
+          - /url: mailto:choongryul.yang@atl.frb.org
+          - generic [ref=e29]: 
+        - text: choongryul.yang@atl.frb.org
+      - navigation [ref=e30]:
+        - link "About" [ref=e31] [cursor=pointer]:
+          - /url: "#about"
+        - link "Publications" [ref=e32] [cursor=pointer]:
+          - /url: "#publications"
+        - link "Working Papers" [ref=e33] [cursor=pointer]:
+          - /url: "#working-papers"
+        - link "Work in Progress" [ref=e34] [cursor=pointer]:
+          - /url: "#work-in-progress"
+    - generic [ref=e35]:
+      - text: I am a
+      - link "Research Economist and Assistant Advisor" [ref=e36] [cursor=pointer]:
+        - /url: https://www.atlantafed.org/research/economists
+      - text: at the
+      - link "Federal Reserve Bank of Atlanta" [ref=e37] [cursor=pointer]:
+        - /url: https://www.atlantafed.org/
+      - text: .
+      - text: My research focuses on macroeconomic topics, including monetary and fiscal policy, expectations formation, and business cycle fluctuations. I am particularly interested in understanding how information frictions and household attention shape the transmission of economic policy.
+      - paragraph [ref=e38]: Publications
+      - generic [ref=e39]:
+        - paragraph [ref=e40]:
+          - generic [ref=e41]: "Effects of Monetary Policy on Household Expectations: The Role of Homeownership"
+          - generic [ref=e42]: Published
+          - generic [ref=e43]:
+            - link "Journal of Monetary Economics" [ref=e44] [cursor=pointer]:
+              - /url: https://doi.org/10.1016/j.jmoneco.2024.103599
+              - generic [ref=e45]: Journal of Monetary Economics
+            - text: ", October 2024, Vol. 147, 103599."
+          - text: with
+          - link "Hie Joo Ahn" [ref=e46] [cursor=pointer]:
+            - /url: https://sites.google.com/site/hiejooahn/
+          - text: and
+          - link "Shihan Xie" [ref=e47] [cursor=pointer]:
+            - /url: https://sites.google.com/view/shihanxie/
+          - link "pdf" [ref=e48] [cursor=pointer]:
+            - /url: research/AXY_JME.pdf
+            - generic [ref=e49]: 
+            - text: pdf
+          - text: "|"
+          - generic [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]: 
+            - text: cite
+          - text: "|"
+          - link "appendix" [ref=e56] [cursor=pointer]:
+            - /url: research/AXY_OnlineAppendix.pdf
+          - text: "| featured in"
+          - link "Brookings" [ref=e57] [cursor=pointer]:
+            - /url: https://www.brookings.edu/articles/hutchins-roundup-child-tax-credit-homeowners-and-more/
+          - text: "|"
+          - generic [ref=e58]: 
+          - link "[FEDS WP]" [ref=e59] [cursor=pointer]:
+            - /url: https://www.federalreserve.gov/econres/feds/effects-of-monetary-policy-on-household-expectations-the-role-of-homeownership.htm
+        - checkbox "abstract" [ref=e60]
+        - paragraph: We study the role of homeownership in the effectiveness of monetary policy on households' expectations based on individual-level microdata in the U.S. We find that homeowners lower their near-term inflation expectations and optimism about the labor market outlook in response to a rise in mortgage rates, while renters are less likely to do so. We further show that forward guidance shocks lead to similar differences between homeowners and renters. Our results suggest that homeowners pay attention to news on interest rates and adjust their expectations accordingly in a manner consistent with the intended effect of monetary policy. We characterize this empirical finding with a rational inattention model where mortgage payments create an incentive for homeowners to acquire information on monetary policy, unlike renters. This housing-driven endogenous attentiveness is the key mechanism behind the compelling empirical link among homeownership, attention, and the transmission of monetary policy.
+        - checkbox "cite" [ref=e61]
+        - paragraph:
+          - text: "@article{AXY2024,"
+          - text: "author = {Hie Joo Ahn and Shihan Xie and Choongryul Yang},"
+          - text: "title = {Effects of monetary policy on household expectations:"
+          - text: "The role of homeownership},"
+          - text: "journal = {Journal of Monetary Economics},"
+          - text: "doi = {https://doi.org/10.1016/j.jmoneco.2024.103599},"
+          - text: "url = {https://www.sciencedirect.com/science/article/pii/S0304393224000527},"
+          - text: "year = {2024}"
+          - text: "note = {Forthcoming}"
+          - text: "}"
+      - generic [ref=e62]:
+        - paragraph [ref=e63]:
+          - generic [ref=e64]: Redistribution and the Monetary–Fiscal Policy Mix
+          - generic [ref=e65]: Published
+          - generic [ref=e66]:
+            - link "Quantitative Economics" [ref=e67] [cursor=pointer]:
+              - /url: https://doi.org/10.3982/QE2030
+              - generic [ref=e68]: Quantitative Economics
+            - text: ", July 2023, Vol. 14, Issue 3, 817–853."
+          - text: with
+          - link "Saroj Bhattarai" [ref=e69] [cursor=pointer]:
+            - /url: https://sites.google.com/site/bhattaraisaroj/
+          - text: and
+          - link "Jae Won Lee" [ref=e70] [cursor=pointer]:
+            - /url: https://sites.google.com/site/jwlee7/
+          - link "pdf" [ref=e71] [cursor=pointer]:
+            - /url: research/BLY_FTPL.pdf
+            - generic [ref=e72]: 
+            - text: pdf
+          - text: "|"
+          - generic [ref=e74] [cursor=pointer]:
+            - generic [ref=e75]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e77] [cursor=pointer]:
+            - generic [ref=e78]: 
+            - text: cite
+          - text: "|"
+          - generic [ref=e79]: 
+          - link "[FEDS WP]" [ref=e80] [cursor=pointer]:
+            - /url: https://www.federalreserve.gov/econres/feds/redistribution-and-the-monetary-fiscal-policy-mix.htm
+          - link "[CAMA WP]" [ref=e81] [cursor=pointer]:
+            - /url: https://cama.crawford.anu.edu.au/publication/cama-working-paper-series/18217/redistribution-and-monetary-fiscal-policy-mix/
+          - link "[CESifo WP]" [ref=e82] [cursor=pointer]:
+            - /url: https://www.cesifo.org/en/publications/2020/working-paper/redistribution-and-monetary-fiscal-policy-mix/
+        - checkbox "abstract" [ref=e83]
+        - paragraph: We show that the effectiveness of redistribution policy is tied to how much inflation it generates, and thereby, to monetary-fiscal adjustments that ultimately finance the transfers. In the monetary regime, taxes increase to finance transfers while in the fiscal regime, inflation rises, imposing inflation taxes on public debt holders. We show analytically that the fiscal regime generates larger and more persistent inflation than the monetary regime. In a two-sector model, we quantify the effects of the CARES Act in a COVID recession. We find that transfer multipliers are larger, and that moreover, redistribution is Pareto improving, under the fiscal regime.
+        - checkbox "cite" [ref=e84]
+        - paragraph:
+          - text: "@article{BLY2023,"
+          - text: "author = {Bhattarai, Saroj and Lee, Jae Won and Yang, Choongryul},"
+          - text: "title = {Redistribution and the monetary-fiscal policy mix},"
+          - text: "journal = {Quantitative Economics},"
+          - text: "volume = {14},"
+          - text: "number = {3},"
+          - text: "pages = {817-853},"
+          - text: "doi = {https://doi.org/10.3982/QE2030},"
+          - text: "url = {https://onlinelibrary.wiley.com/doi/abs/10.3982/QE2030},"
+          - text: "eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.3982/QE2030},"
+          - text: "year = {2023}"
+          - text: "}"
+      - generic [ref=e85]:
+        - paragraph [ref=e86]:
+          - generic [ref=e87]: "Rational Inattention, Menu Costs, and Multi-Product Firms: Micro Evidence and Aggregate Implications"
+          - generic [ref=e88]: Published
+          - generic [ref=e89]:
+            - link "Journal of Monetary Economics" [ref=e90] [cursor=pointer]:
+              - /url: https://doi.org/10.1016/j.jmoneco.2022.04.004
+              - generic [ref=e91]: Journal of Monetary Economics
+            - text: ", May 2022, Vol. 128, 105–123."
+          - generic [ref=e92]:
+            - generic [ref=e93]: 
+            - text: Winner of the 2020 SCE Student Prize
+            - link "[Link]" [ref=e94] [cursor=pointer]:
+              - /url: https://comp-econ.com/contest-and-prize/
+          - link "pdf" [ref=e95] [cursor=pointer]:
+            - /url: research/RI_Menu_MultiProduct.pdf
+            - generic [ref=e96]: 
+            - text: pdf
+          - text: "|"
+          - generic [ref=e98] [cursor=pointer]:
+            - generic [ref=e99]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e101] [cursor=pointer]:
+            - generic [ref=e102]: 
+            - text: cite
+          - text: "|"
+        - checkbox "abstract" [ref=e103]
+        - paragraph: "Using a New Zealand firm-level survey, I show that firms producing more goods have both better information about inflation and more frequent but smaller price changes. To explain these empirical findings, I develop a general equilibrium menu cost model with rationally inattentive multi-product firms. I show that the interaction of nominal and informational rigidities leads to a new selection effect: price adjusters are better informed than non-adjusters. This selection endogenously generates a leptokurtic distribution of desired price changes, which amplifies monetary non-neutrality. Compared to a one-product baseline, the real effects of monetary shocks are 12% smaller in a two-product model."
+        - checkbox "cite" [ref=e104]
+        - paragraph:
+          - text: "@article{Yang2022,"
+          - text: "title = {Rational inattention, menu costs, and multi-product firms:"
+          - text: "Micro evidence and aggregate implications},"
+          - text: "journal = {Journal of Monetary Economics},"
+          - text: "volume = {128},"
+          - text: "pages = {105-123},"
+          - text: "year = {2022},"
+          - text: "issn = {0304-3932},"
+          - text: "doi = {https://doi.org/10.1016/j.jmoneco.2022.04.004},"
+          - text: "url = {https://www.sciencedirect.com/science/article/pii/S0304393222000587},"
+          - text: "author = {Choongryul Yang},"
+          - text: "}"
+      - generic [ref=e105]:
+        - paragraph [ref=e106]:
+          - generic [ref=e107]: Local Scars of the US Housing Crisis
+          - generic [ref=e108]: Published
+          - generic [ref=e109]:
+            - link "Journal of Monetary Economics" [ref=e110] [cursor=pointer]:
+              - /url: https://doi.org/10.1016/j.jmoneco.2021.02.001
+              - generic [ref=e111]: Journal of Monetary Economics
+            - text: ", April 2021, Vol. 119, 40–57."
+          - text: with
+          - link "Saroj Bhattarai" [ref=e112] [cursor=pointer]:
+            - /url: https://sites.google.com/site/bhattaraisaroj/
+          - text: and
+          - link "Felipe Schwartzman" [ref=e113] [cursor=pointer]:
+            - /url: https://sites.google.com/view/felipeschwartzman/
+          - link "pdf" [ref=e114] [cursor=pointer]:
+            - /url: research/BSY_Scars.pdf
+            - generic [ref=e115]: 
+            - text: pdf
+          - text: "|"
+          - generic [ref=e117] [cursor=pointer]:
+            - generic [ref=e118]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e120] [cursor=pointer]:
+            - generic [ref=e121]: 
+            - text: cite
+          - text: "|"
+          - generic [ref=e122]: 
+          - link "[Richmond Fed WP]" [ref=e123] [cursor=pointer]:
+            - /url: https://www.richmondfed.org/-/media/richmondfedorg/publications/research/working_papers/2019/wp19-07.pdf
+        - checkbox "abstract" [ref=e124]
+        - paragraph: "The 2006-09 US housing crisis had scarring local effects. For a given county, a housing shock generating a 10% reduction in housing wealth from 2006 through 2009 led to a 4.4% decline in employment by 2018 and a commensurate decline in value added. This persistent local effect occurred despite the shock having no significant impact on labor productivity. The local labor market adjustment to the housing shock was particularly costly: local wages did not respond, and long-run convergence in the local labor market slack instead took place entirely through population losses in affected regions. Moreover, the 2002-06 housing boom does not generate significant employment gains, indicating that the employment losses relative to 2006 are also losses relative to the counterfactual case in which there was no housing cycle."
+        - checkbox "cite" [ref=e125]
+        - paragraph:
+          - text: "@article{BSY2021,"
+          - text: "title = {Local scars of the US housing crisis},"
+          - text: "journal = {Journal of Monetary Economics},"
+          - text: "volume = {119},"
+          - text: "pages = {40-57},"
+          - text: "year = {2021},"
+          - text: "issn = {0304-3932},"
+          - text: "doi = {https://doi.org/10.1016/j.jmoneco.2021.02.001},"
+          - text: "url = {https://www.sciencedirect.com/science/article/pii/S0304393221000167},"
+          - text: "author = {Saroj Bhattarai and Felipe Schwartzman and Choongryul Yang},"
+          - text: "}"
+      - paragraph [ref=e126]: Working Papers
+      - generic [ref=e127]:
+        - paragraph [ref=e128]:
+          - generic [ref=e129]: What Can Measured Beliefs Tell Us About Monetary Non-Neutrality?
+          - generic [ref=e130]: R&R at AER
+          - text: with
+          - link "Hassan Afrouzi" [ref=e131] [cursor=pointer]:
+            - /url: https://afrouzi.com/
+          - text: and
+          - link "Joel P. Flynn" [ref=e132] [cursor=pointer]:
+            - /url: https://joelflynn.com/
+          - text: Reject and resubmitted at
+          - generic [ref=e133]: American Economic Review
+          - link "pdf (Jan ’26)" [ref=e134] [cursor=pointer]:
+            - /url: research/afy_selection.pdf
+            - generic [ref=e135]: 
+            - text: pdf (Jan ’26)
+          - text: "|"
+          - generic [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e139]: 
+          - link "[NBER WP]" [ref=e140] [cursor=pointer]:
+            - /url: https://www.nber.org/papers/w32541
+          - link "[FEDS WP]" [ref=e141] [cursor=pointer]:
+            - /url: https://www.federalreserve.gov/econres/feds/what-can-measured-beliefs-tell-us-about-monetary-non-neutrality.htm
+        - checkbox "abstract" [ref=e142]
+        - paragraph: "This paper studies how to use microeconomic data on beliefs and prices to identify the relative contributions of pricing and information frictions to monetary non-neutrality. In a canonical general equilibrium model with both pricing frictions and information acquisition, we analytically characterize how these frictions contribute to non-neutrality. Exploiting this characterization, we show that data on the cross-sectional distributions of uncertainty and pricing durations are necessary and sufficient to identify non-neutrality. Implementing our approach in survey data, we find that: (i) information and pricing frictions are approximately equally important, and (ii) assuming exogenous information would overstate non-neutrality by 60%."
+      - generic [ref=e143]:
+        - paragraph [ref=e144]:
+          - generic [ref=e145]: "The Rise of Inaction: Job Reallocation and the Declining Labor Share"
+          - generic [ref=e146]: Working Paper
+          - text: with
+          - link "Byunghee Choi" [ref=e147] [cursor=pointer]:
+            - /url: https://directory.msmary.edu/people/byunghee-choi.html
+          - link "pdf (Apr ’26)" [ref=e148] [cursor=pointer]:
+            - /url: research/CY_LS_JRR.pdf
+            - generic [ref=e149]: 
+            - text: pdf (Apr ’26)
+          - text: "|"
+          - generic [ref=e151] [cursor=pointer]:
+            - generic [ref=e152]: 
+            - text: abstract
+          - text: "|"
+        - checkbox "abstract" [ref=e153]
+        - paragraph: Since 2000, the U.S. labor share and job reallocation rate have both fallen. We ask whether rising labor adjustment frictions can help explain this joint decline. We document a rise in establishment inaction and a shift toward smaller conditional employment changes, patterns consistent with kinked adjustment costs. In state-industry data, larger reallocation declines are associated with larger payroll-share declines, and the same cells with larger increases in establishment-level inaction also show larger declines in firm-level job reallocation and payroll shares. A calibrated firm-dynamics model disciplined by inaction can account for a meaningful share of both aggregate declines over the sample period.
+      - generic [ref=e154]:
+        - paragraph [ref=e155]:
+          - generic [ref=e156]: Land Development and Frictions to Housing Supply over the Business Cycle
+          - generic [ref=e157]: Working Paper
+          - text: with
+          - link "Hyunseung Oh" [ref=e158] [cursor=pointer]:
+            - /url: https://sites.google.com/site/hyunseungoh/
+          - text: and
+          - link "Chamna Yoon" [ref=e159] [cursor=pointer]:
+            - /url: https://sites.google.com/site/chamnayoon/
+          - link "pdf (Nov ’25)" [ref=e160] [cursor=pointer]:
+            - /url: research/OYY_TTD.pdf
+            - generic [ref=e161]: 
+            - text: pdf (Nov ’25)
+          - text: "|"
+          - generic [ref=e163] [cursor=pointer]:
+            - generic [ref=e164]: 
+            - text: abstract
+          - text: "|"
+          - link "appendix" [ref=e165] [cursor=pointer]:
+            - /url: research/OYY_TTD_Appendix.pdf
+          - text: "| featured in"
+          - link "Bloomberg" [ref=e166] [cursor=pointer]:
+            - /url: https://www.bloomberg.com/news/newsletters/2024-02-16/odd-lots-newsletter-who-cares-when-the-rate-cuts-start
+          - text: "|"
+          - generic [ref=e167]: 
+          - link "[FEDS WP]" [ref=e168] [cursor=pointer]:
+            - /url: https://www.federalreserve.gov/econres/feds/land-development-and-frictions-to-housing-supply-over-the-business-cycle.htm
+        - checkbox "abstract" [ref=e169]
+        - paragraph: Using a novel dataset on U.S. residential land development, we document that the average time-to-develop (TTD) for residential properties—which includes both the time spent preparing land infrastructures and construction—is about three years, with significant geographic variation. Incorporating these lengthy and dispersed TTDs into a housing investment model, we find that short-run housing supply elasticities differ markedly from long-run elasticities, influencing housing market dynamics over the business cycle. Our empirical analysis reveals that short-run elasticities can account for local house price variations more effectively than long-run measures during the 2010s housing recovery and the COVID housing boom. Furthermore, we demonstrate through our model that regions with a wider gap between the short- and long-run elasticities via lengthy TTD experience delayed supply responses, limiting the immediate effectiveness of supply policies aimed at stabilizing house prices but enhancing their medium-term impact.
+      - generic [ref=e170]:
+        - paragraph [ref=e171]:
+          - generic [ref=e172]: Attention-Dependent Monetary Transmission to Household Beliefs
+          - generic [ref=e173]: Working Paper
+          - text: with Jaemin Jeong and
+          - link "Eunseong Ma" [ref=e174] [cursor=pointer]:
+            - /url: https://sites.google.com/site/eunseongmaecon/eunseong-ma/
+          - link "pdf (Oct ’25)" [ref=e175] [cursor=pointer]:
+            - /url: research/Attention_MP_v1.pdf
+            - generic [ref=e176]: 
+            - text: pdf (Oct ’25)
+          - text: "|"
+          - generic [ref=e178] [cursor=pointer]:
+            - generic [ref=e179]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e180]: 
+          - link "[FEDS WP]" [ref=e181] [cursor=pointer]:
+            - /url: https://www.federalreserve.gov/econres/feds/attention-dependent-monetary-transmission-to-household-beliefs.htm
+        - checkbox "abstract" [ref=e182]
+        - paragraph: "When do households listen to the Fed? We show the answer lies in a simple but powerful force: household attention to macroeconomic conditions. We develop a model where attention acts as a crucial gatekeeper for the pass-through of policy news to beliefs, and confirm its predictions using household survey data. We find that belief revisions to monetary policy surprises are concentrated among attentive individuals—particularly those with high financial stakes—and this effect strengthens dramatically during uncertain times. This implies the expectations channel is most potent when it matters most, suggesting policymakers should account for the time-varying and heterogeneous nature of public attention."
+      - generic [ref=e183]:
+        - paragraph [ref=e184]:
+          - generic [ref=e185]: Dynamic Rational Inattention and the Phillips Curve
+          - generic [ref=e186]: R&R at AER
+          - text: with
+          - link "Hassan Afrouzi" [ref=e187] [cursor=pointer]:
+            - /url: https://afrouzi.com/
+          - text: Reject and resubmit at
+          - generic [ref=e188]: American Economic Review
+          - link "pdf (Apr ’21)" [ref=e189] [cursor=pointer]:
+            - /url: research/dynamic_inattention.pdf
+            - generic [ref=e190]: 
+            - text: pdf (Apr ’21)
+          - text: "|"
+          - generic [ref=e192] [cursor=pointer]:
+            - generic [ref=e193]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e194]: 
+          - link "[CESifo WP]" [ref=e195] [cursor=pointer]:
+            - /url: https://www.cesifo.org/en/publications/2021/working-paper/dynamic-rational-inattention-and-phillips-curve
+          - text: "— Documentation:"
+          - link "html" [ref=e196] [cursor=pointer]:
+            - /url: https://afrouzi.com/DRIPs.jl/dev/
+          - text: "|"
+          - link "pdf" [ref=e197] [cursor=pointer]:
+            - /url: research/DRIPs_manual.pdf
+          - text: "|"
+          - text: "— Packages:"
+          - link "Julia" [ref=e198] [cursor=pointer]:
+            - /url: https://github.com/afrouzi/DRIPs.jl
+          - text: "|"
+          - link "Matlab" [ref=e199] [cursor=pointer]:
+            - /url: https://github.com/choongryulyang/DRIPs.m
+          - text: "|"
+          - text: "— Jupyter Notebooks:"
+          - link "Dynamic RI" [ref=e200] [cursor=pointer]:
+            - /url: https://mybinder.org/v2/gh/afrouzi/DRIPs.jl/binder?filepath=examples
+            - img "Dynamic RI" [ref=e201]
+        - checkbox "abstract" [ref=e202]
+        - paragraph: We develop a fast, tractable, and robust method for solving the transition path of dynamic rational inattention problems in linear-quadratic-Gaussian settings. As an application of our general framework, we develop an attention-driven theory of dynamic pricing in which the Phillips curve slope is endogenous to systematic aspects of monetary policy. In our model, when the monetary authority is more committed to stabilizing nominal variables, rationally inattentive firms pay less attention to changes in their input costs, which leads to a flatter Phillips curve and more anchored inflation expectations. This effect, however, is not symmetric. A more dovish monetary policy flattens the Phillips curve in the short-run but generates a steeper Phillips curve in the long-run. In a calibrated version of our general equilibrium model, we find that our mechanism quantifies a 75% decline in the slope of the Phillips curve in the post-Volcker period, relative to the period before it.
+      - generic [ref=e203]:
+        - paragraph [ref=e204]:
+          - generic [ref=e205]: "Shocks, Frictions, and Policy Regimes: Understanding Inflation after the COVID-19 Pandemic"
+          - generic [ref=e206]: Working Paper
+          - text: with
+          - link "Taeyoung Doh" [ref=e207] [cursor=pointer]:
+            - /url: https://www.kansascityfed.org/research-staff/taeyoung-doh/
+          - link "pdf (Sep ’24)" [ref=e208] [cursor=pointer]:
+            - /url: research/DY_COVID_Inflation.pdf
+            - generic [ref=e209]: 
+            - text: pdf (Sep ’24)
+          - text: "|"
+          - generic [ref=e211] [cursor=pointer]:
+            - generic [ref=e212]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e213]: 
+          - link "[KC Fed WP]" [ref=e214] [cursor=pointer]:
+            - /url: https://www.kansascityfed.org/research/research-working-papers/shocks-frictions-and-policy-regimes-understanding-inflation-after-the-covid-19-pandemic/
+        - checkbox "abstract" [ref=e215]
+        - paragraph: We set-up a two-sector New Keynesian model with input-output linkages and monetary-fiscal policy interactions to study the post-COVID-19 inflation. We test alternative calibrations of the model based on the fit of aggregate inflation, using shock estimates obtained by fitting goods inflation. Our preferred model suggests that fiscal shocks not offset by monetary policy account for the initial inflation surge in the first half of 2021 while supply-side shocks have emerged as main drivers of inflation since then. Multiple factors (“supply-side disruption”, “expansionary policy”, and “sectoral reallocation shock”) played an important role at different phases of the recent inflationary episode.
+      - generic [ref=e216]:
+        - paragraph [ref=e217]:
+          - generic [ref=e218]: Macroeconomic Effects of Capital Tax Rate Changes
+          - generic [ref=e219]: Working Paper
+          - text: with
+          - link "Saroj Bhattarai," [ref=e220] [cursor=pointer]:
+            - /url: https://sites.google.com/site/bhattaraisaroj/
+          - link "Jae Won Lee," [ref=e221] [cursor=pointer]:
+            - /url: https://sites.google.com/site/jwlee7/
+          - text: and
+          - link "Woong Yong Park" [ref=e222] [cursor=pointer]:
+            - /url: https://sites.google.com/view/woongyongpark/
+          - link "pdf (May ’22)" [ref=e223] [cursor=pointer]:
+            - /url: research/CapitalTaxRateChanges_Website.pdf
+            - generic [ref=e224]: 
+            - text: pdf (May ’22)
+          - text: "|"
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]: 
+            - text: abstract
+          - text: "|"
+          - generic [ref=e228]: 
+          - link "[FEDS WP]" [ref=e229] [cursor=pointer]:
+            - /url: https://www.federalreserve.gov/econres/feds/macroeconomic-effects-of-capital-tax-rate-changes.htm
+          - link "[Dallas Fed WP]" [ref=e230] [cursor=pointer]:
+            - /url: https://doi.org/10.24149/gwp391
+          - link "[CESifo WP]" [ref=e231] [cursor=pointer]:
+            - /url: https://www.cesifo.org/en/publications/2019/working-paper/macroeconomic-effects-capital-tax-rate-changes
+        - checkbox "abstract" [ref=e232]
+        - paragraph: "We study aggregate, distributional, and welfare effects of a permanent reduction in the capital tax rate in a dynamic equilibrium model with capital-skill complementarity. Such a tax reform leads to expansionary long-run aggregate effects but is coupled with an increase in the skill premium. Moreover, the expansionary long-run aggregate effects are smaller when distortionary labor or consumption tax rates have to increase to finance the capital tax rate cut. An extension to a model with heterogeneous households shows that consumption inequality increases in the long-run. We study transition dynamics and show that short-run effects depend critically on the monetary policy response: whether the central bank allows inflation to directly facilitate government debt stabilization and how inertially it raises interest rates. Finally, we contrast the long-term aggregate welfare gains with short-term losses and show that welfare gains for the skilled go together with welfare losses for the unskilled."
+      - paragraph [ref=e233]: Work in Progress
+      - paragraph [ref=e235]:
+        - generic [ref=e236]: Tax Shocks and Financial Heterogeneity
+        - text: with
+        - link "Cooper Howes" [ref=e237] [cursor=pointer]:
+          - /url: https://sites.google.com/view/cooperhowes/
+      - paragraph [ref=e239]:
+        - generic [ref=e240]: Income Inequality and Fiscal Multipliers
+        - text: with
+        - link "Donggyu Lee" [ref=e241] [cursor=pointer]:
+          - /url: https://www.newyorkfed.org/research/economists/dlee
+  - contentinfo [ref=e242]:
+    - generic [ref=e243]:
+      - paragraph [ref=e244]: The views expressed on this site are solely my own and should not be interpreted as reflecting the views of the Federal Reserve Bank of Atlanta or of any person associated with the Federal Reserve System.
+      - paragraph [ref=e245]:
+        - text: This design was inspired by the
+        - link "Minimal Research Theme" [ref=e246] [cursor=pointer]:
+          - /url: https://github.com/SebastinSanty/minimal-research-theme
+        - text: .

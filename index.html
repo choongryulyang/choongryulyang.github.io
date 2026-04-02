@@ -17,20 +17,29 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style-3.css">
     <script src="https://kit.fontawesome.com/24e560167b.js" crossorigin="anonymous"></script>
+    <!-- Prevent flash: apply saved theme before paint -->
+    <script>
+        (function() {
+            var t = localStorage.getItem('theme');
+            if (t) document.documentElement.setAttribute('data-theme', t);
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+                document.documentElement.setAttribute('data-theme', 'dark');
+        })();
+    </script>
 
     <link rel="canonical" href="https://choongryul-yang.com/">
 
 
     <meta name="description"
-        content="Choongryul Yang is a Research Economist at the Federal Reserve Bank of Atlanta. 
+        content="Choongryul Yang is a Research Economist at the Federal Reserve Bank of Atlanta.
                  His research focuses on macroeconomic topics, including monetary and fiscal policy, expectations formation, and business cycle fluctuations." />
-    <meta name="keywords" content="choongryul, yang, choongryul yang, choongryul yang econ, choong yang, choong yang econ, frb yang, fed yang, economics, econ, 
+    <meta name="keywords" content="choongryul, yang, choongryul yang, choongryul yang econ, choong yang, choong yang econ, frb yang, fed yang, economics, econ,
                                    research, academics, macroeconomics, macro" />
     <meta name="author" content="Choongryul Yang">
     <meta name="address" content="Research Economist | Federal Reserve Bank of Atlanta">
 
-    <meta name="theme-color" content="#222222">
-    
+    <meta name="theme-color" content="#1a3a5c">
+
     <!-- Open Graph tags -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Research Economist | Federal Reserve Bank of Atlanta" />
@@ -47,21 +56,6 @@
     <meta name="twitter:image:src" content="https://choongryul-yang.com/files/profile2.jpg">
 
 
-    <!-- 
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-117931963-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    -->
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLDPM89J8Z"></script>
     <script>
@@ -72,39 +66,51 @@
         gtag('config', 'G-SLDPM89J8Z');
     </script>
 
-    
+
   </head>
   <body>
-    <!-- <h1>Hello, world!</h1> -->
-    <div class="container pt-1 allstuffp">
+    <!-- Dark mode toggle -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+    </button>
+
+    <div class="container-fluid pt-1 allstuffp" style="max-width: 1400px;">
         <div class="row pt-5 allstuff">
-            <div class="col-md-4 pt-5">
+            <div class="col-md-3 pt-5">
                 <div class="fixed-posi">
                 <img src="files/profile2.jpg" class="profilepic pb-2">
-                <p class="pt-4 name"><b>Choongryul Yang</b></p>
-                <p class="" style="margin-bottom:0px; font-size: 14pt;color:#111">
+                <p class="pt-3 name"><b>Choongryul Yang</b></p>
+                <p class="" style="margin-bottom:0px; font-size: 11pt; color: var(--text-primary);">
                     Research Economist and Assistant Advisor
                     <br>
                     Federal Reserve Bank of Atlanta</p>
 
-                <div class="pt-5 menur"><a class="menulink2" target="_blank" href="cv/ChoongryulYang_CV.pdf"
+                <!-- CV link -->
+                <div class="pt-4 menur"><a class="menulink2" target="_blank" href="cv/ChoongryulYang_CV.pdf"
                         onclick="gtag('event','Click',{'event_category': 'CV','event_action':'Click','event_label':'CV'})">
-                        <i class="fa-solid fa-file-pdf"></i> CV (February 2026)</a></div>
-                <div class="menur"><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=BCNGJ30AAAAJ&hl=en" 
-                    onclick="gtag('event','Click',{'event_category': 'Profile GS','event_action':'Click','event_label':'Google Scholar'})">
-                    <i class="fa-brands fa-google-scholar"></i> Google Scholar</a></div>
-                <div class="menur"><a class="menulink" target="_blank" href="https://www.linkedin.com/in/choongryul-yang/" 
-                    onclick="gtag('event','Click',{'event_category': 'Profile LI','event_action':'Click','event_label':'LinkedIn'})">
-                    <i class="fa-brands fa-linkedin"></i>  LinkedIn</a></div>
-                <div class="pt-1 menur"><a class="menulink" target="_blank" href="https://twitter.com/_ChoongYang" 
-                    onclick="gtag('event','Click',{'event_category': 'Profile X','event_action':'Click','event_label':'Twitter'})">
-                    <i class="fa-brands fa-square-x-twitter"></i>  Twitter</a></div>
-                <div class="pt-1 menur"><a class="menulink" target="_blank" href="https://afrouzi.com/DRIPs.jl/dev/" 
-                    onclick="gtag('event','Click',{'event_category': 'DRIPs','event_action':'Click','event_label':'DRIPs'})">
-                    <i class="fa-brands fa-github"></i>  DRIPs</a></div>
+                        <i class="fa-solid fa-file-pdf"></i> Curriculum Vitae (April 2026)</a></div>
 
+                <!-- Profile icon links -->
+                <div class="sidebar-label">Profiles</div>
+                <div class="icon-links">
+                    <a href="https://scholar.google.com/citations?user=BCNGJ30AAAAJ&hl=en" target="_blank" title="Google Scholar"
+                        onclick="gtag('event','Click',{'event_category': 'Profile GS','event_action':'Click','event_label':'Google Scholar'})">
+                        <i class="fa-brands fa-google-scholar"></i></a>
+                    <a href="https://www.linkedin.com/in/choongryul-yang/" target="_blank" title="LinkedIn"
+                        onclick="gtag('event','Click',{'event_category': 'Profile LI','event_action':'Click','event_label':'LinkedIn'})">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/_ChoongYang" target="_blank" title="Twitter"
+                        onclick="gtag('event','Click',{'event_category': 'Profile X','event_action':'Click','event_label':'Twitter'})">
+                        <i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://afrouzi.com/DRIPs.jl/dev/" target="_blank" title="DRIPs.jl"
+                        onclick="gtag('event','Click',{'event_category': 'DRIPs','event_action':'Click','event_label':'DRIPs'})">
+                        <i class="fa-brands fa-github"></i></a>
+                </div>
 
-                <p class="pt-2" style="margin-bottom:0px; color:#111">
+                <!-- Contact -->
+                <div class="sidebar-label">Contact</div>
+                <p style="margin-bottom:0px; font-size: 10.5pt; color: var(--text-secondary);">
                     <a class="menulink" href="mailto:cryang1224@gmail.com" target="_blank"
                         onclick="gtag('event','Click',{'event_category': 'Email','event_action':'Click','event_label':'Email'})">
                         <i class="fa-solid fa-envelope"></i></a> cryang1224@gmail.com<br>
@@ -113,29 +119,36 @@
                         <i class="fa-regular fa-envelope"></i></a> choongryul.yang@atl.frb.org
                 </p>
 
+                <!-- Section navigation -->
+                <nav class="sidebar-nav">
+                    <a href="#about">About</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#working-papers">Working Papers</a>
+                    <a href="#work-in-progress">Work in Progress</a>
+                </nav>
+
                 </div>
 
             </div>
-            <div class="col-md-8 pt-5 about">
-                I am a <a class="tag" href="https://www.atlantafed.org/research/economists" target="_blank" 
-                    onclick="gtag('event','Click',{'event_category': 'Fed Profile','event_action':'Click','event_label':'Fed Profile'})"> Research Economist and Assistant Advisor</a> 
-                at the <a class="tag" href="https://www.atlantafed.org/" target="_blank" 
+            <div class="col-md-9 pt-5 about" id="about">
+                I am a <a class="tag" href="https://www.atlantafed.org/research/economists" target="_blank"
+                    onclick="gtag('event','Click',{'event_category': 'Fed Profile','event_action':'Click','event_label':'Fed Profile'})"> Research Economist and Assistant Advisor</a>
+                at the <a class="tag" href="https://www.atlantafed.org/" target="_blank"
                     onclick="gtag('event','Click',{'event_category': 'Fed Profile','event_action':'Click','event_label':'Fed Profile'})"> Federal Reserve Bank of Atlanta</a>. <br> <br>
 
-                My research focuses on macroeconomic topics, including monetary and fiscal policy, expectations formation, and business cycle fluctuations. 
-                <!--<br><br>
-
-                For more details, contact me at <a class="tag" href="mailto:cryang1224@gmail.com">cryang1224@gmail.com</a> 
-                or <a class="tag" href="mailto:choongryul.yang@frb.gov" target="_blank">choongryul.yang@frb.gov</a>.-->
+                My research focuses on macroeconomic topics, including monetary and fiscal policy, expectations formation, and business cycle fluctuations.
+                I am particularly interested in understanding how information frictions and household attention shape the transmission of economic policy.
 
 
-                 <p class="header pt-4"><b>Publications</b></p>
+                 <p class="header pt-4" id="publications"><b>Publications</b></p>
                     <div class="py-1">
                         <p class="paper my-2 pl-2">
-                            <span class="" style="color: #000000">
+                            <span class="" style="color: var(--text-primary);">
                                 <b>Effects of Monetary Policy on Household Expectations: The Role of Homeownership</b>
-                            </span><br>
-                            <span class="conf pt-1""><a class=" journal" href="https://doi.org/10.1016/j.jmoneco.2024.103599" target="_blank"
+                            </span>
+                            <span class="badge-status badge-published">Published</span>
+                            <br>
+                            <span class="conf pt-1"><a class="journal" href="https://doi.org/10.1016/j.jmoneco.2024.103599" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AXY','event_action':'Click','event_label':'AXY JME'})">
                                 <b><i>Journal of Monetary Economics</b></i></a>, October 2024, Vol. 147, 103599.</span><br>
                             with
@@ -146,7 +159,7 @@
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Shihan'})">Shihan
                                 Xie</a>
                             <br>
-                    
+
                             <a class="tag" href="research/AXY_JME.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AXY','event_action':'Click','event_label':'AXY PDF'})">
                                 <i class="fa-regular fa-file"></i> pdf</a><span class="tagsep">|</span>
@@ -160,21 +173,21 @@
                             <a class="tag" href="research/AXY_OnlineAppendix.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AXY','event_action':'Click','event_label':'AXY Appendix'})">
                                 appendix</a><span class="tagsep">|</span>
-                            featured in <a class="tag" target="_blank"
+                            featured in <a class="featured-badge" target="_blank"
                                 href="https://www.brookings.edu/articles/hutchins-roundup-child-tax-credit-homeowners-and-more/"
                                 onclick="gtag('event','Click',{'event_category': 'AXY','event_action':'Click','event_label':'AXY Brookings'})">
                                 Brookings</a><span class="tagsep">|</span>
-                            
+
                             <i class="fa-solid fa-up-right-from-square"></i>
                             <a class="tag" target="_blank"
                                 href="https://www.federalreserve.gov/econres/feds/effects-of-monetary-policy-on-household-expectations-the-role-of-homeownership.htm"
                                 onclick="gtag('event','Click',{'event_category': 'AXY','event_action':'Click','event_label':'AXY FEDS'})">
                                 [FEDS WP]</a>
-                    
+
                         </p>
-                    
+
                         <input type="checkbox" id="AXY" />
-                        <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #303030">
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
                             We study the role of homeownership in the effectiveness of monetary policy on households'
                             expectations based on individual-level microdata in the U.S. We find that homeowners lower their
                             near-term inflation expectations and optimism about the labor market outlook in response to a rise in
@@ -188,9 +201,9 @@
                             transmission of monetary policy.
                             <br>
                         </p>
-                    
+
                         <input type="checkbox" id="AXY_cite" />
-                        <p style="font-size: 10pt; font-family: monospace; margin: 10px 20px; text-align: left; color: #000">
+                        <p style="font-size: 10pt; font-family: 'IBM Plex Mono', monospace; color: var(--text-primary);">
                             @article{AXY2024, <br>
                             &nbsp; author = {Hie Joo Ahn and Shihan Xie and Choongryul Yang},<br>
                             &nbsp; title = {Effects of monetary policy on household expectations: <br>
@@ -208,44 +221,46 @@
 
                     <div class="py-1">
                     <p class="paper my-2 pl-2">
-                        <span class="" style="color: #000000">
-                            <b>Redistribution and the Monetary–Fiscal Policy Mix</b>
-                        </span><br>
-                        <span class="conf pt-1""><a class="journal" href="https://doi.org/10.3982/QE2030" target="_blank" 
+                        <span class="" style="color: var(--text-primary);">
+                            <b>Redistribution and the Monetary&ndash;Fiscal Policy Mix</b>
+                        </span>
+                        <span class="badge-status badge-published">Published</span>
+                        <br>
+                        <span class="conf pt-1"><a class="journal" href="https://doi.org/10.3982/QE2030" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BLY','event_action':'Click','event_label':'BLY QE'})">
-                            <b><i>Quantitative Economics</b></i></a>, July 2023, Vol. 14, Issue 3, 817–853.</span><br>
+                            <b><i>Quantitative Economics</b></i></a>, July 2023, Vol. 14, Issue 3, 817&ndash;853.</span><br>
                         with
-                        <a class="author" href="https://sites.google.com/site/bhattaraisaroj/" target="_blank" 
+                        <a class="author" href="https://sites.google.com/site/bhattaraisaroj/" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Saroj'})">Saroj Bhattarai</a> and
                         <a class="author" href="https://sites.google.com/site/jwlee7/" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Jae Won'})">Jae Won Lee</a> <br>
-                    
-                        <a class="tag" href="research/BLY_FTPL.pdf" target="_blank" 
+
+                        <a class="tag" href="research/BLY_FTPL.pdf" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BLY','event_action':'Click','event_label':'BLY PDF'})">
                             <i class="fa-regular fa-file"></i> pdf</a><span class="tagsep">|</span>
-                        <a class="checkbox" target="_blank" 
+                        <a class="checkbox" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BLY','event_action':'Click','event_label':'BLY Abstract'})">
                             <label for="BLY"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
-                        <a class="checkbox" target="_blank" 
+                        <a class="checkbox" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BLY','event_action':'Click','event_label':'BLY Cite'})">
                             <label for="BLY_cite"><i class="fa-solid fa-quote-right"></i> cite</label></a><span class="tagsep">|</span>
                         <i class="fa-solid fa-up-right-from-square"></i>
                         <a class="tag"
-                            href="https://www.federalreserve.gov/econres/feds/redistribution-and-the-monetary-fiscal-policy-mix.htm" target="_blank" 
+                            href="https://www.federalreserve.gov/econres/feds/redistribution-and-the-monetary-fiscal-policy-mix.htm" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BLY','event_action':'Click','event_label':'BLY FEDS'})">
                             [FEDS WP]</a>
-                        <a class="tag" target="_blank" 
+                        <a class="tag" target="_blank"
                             href="https://cama.crawford.anu.edu.au/publication/cama-working-paper-series/18217/redistribution-and-monetary-fiscal-policy-mix/"
                             onclick="gtag('event','Click',{'event_category': 'BLY','event_action':'Click','event_label':'BLY CAMA'})">
                             [CAMA WP]</a>
-                        <a class="tag" target="_blank" 
+                        <a class="tag" target="_blank"
                             href="https://www.cesifo.org/en/publications/2020/working-paper/redistribution-and-monetary-fiscal-policy-mix/"
                             onclick="gtag('event','Click',{'event_category': 'BLY','event_action':'Click','event_label':'BLY CESifo'})">
                             [CESifo WP]</a>
                     </p>
 
                     <input type="checkbox" id="BLY" />
-                    <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #000">
+                    <p style="font-size: 11.5pt; color: var(--text-secondary);">
                         We show that the effectiveness of redistribution policy is tied to how much inflation
                         it generates, and thereby, to monetary-fiscal adjustments that ultimately finance the transfers.
                         In the monetary regime, taxes increase to finance transfers while in the fiscal regime,
@@ -258,7 +273,7 @@
                     </p>
 
                     <input type="checkbox" id="BLY_cite" />
-                    <p style="font-size: 10pt; font-family: monospace; margin: 10px 20px; text-align: left; color: #000">
+                    <p style="font-size: 10pt; font-family: 'IBM Plex Mono', monospace; color: var(--text-primary);">
                         @article{BLY2023, <br>
                         &nbsp; author = {Bhattarai, Saroj and Lee, Jae Won and Yang, Choongryul},<br>
                         &nbsp; title = {Redistribution and the monetary-fiscal policy mix},<br>
@@ -279,29 +294,31 @@
 
                 <div class="py-1">
                     <p class="paper my-2 pl-2">
-                        <span class="" style="color: #000000">
+                        <span class="" style="color: var(--text-primary);">
                             <b>Rational Inattention, Menu Costs, and Multi-Product Firms: Micro Evidence and Aggregate Implications</b>
-                        </span><br>
-                        <span class="conf pt-1""><a class="journal" href="https://doi.org/10.1016/j.jmoneco.2022.04.004" target="_blank" 
+                        </span>
+                        <span class="badge-status badge-published">Published</span>
+                        <br>
+                        <span class="conf pt-1"><a class="journal" href="https://doi.org/10.1016/j.jmoneco.2022.04.004" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'JMP','event_action':'Click','event_label':'JMP JME'})">
-                                <b><i>Journal of Monetary Economics</b></i></a>, May 2022, Vol. 128, 105–123.</span><br>
-                        <span class="""><i class="fa-solid fa-award"></i> Winner of the 2020 SCE Student Prize
-                            <a class=" tag" href="https://comp-econ.com/contest-and-prize/" target="_blank" 
+                                <b><i>Journal of Monetary Economics</b></i></a>, May 2022, Vol. 128, 105&ndash;123.</span><br>
+                        <span class=""><i class="fa-solid fa-award" style="color: var(--badge-rr);"></i> Winner of the 2020 SCE Student Prize
+                            <a class="tag" href="https://comp-econ.com/contest-and-prize/" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'JMP','event_action':'Click','event_label':'JMP SCE'})">
                                 [Link]</a></span><br>
-                        <a class="tag" href="research/RI_Menu_MultiProduct.pdf" target="_blank" 
+                        <a class="tag" href="research/RI_Menu_MultiProduct.pdf" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'JMP','event_action':'Click','event_label':'JMP PDF'})">
                             <i class="fa-regular fa-file"></i> pdf</a><span class="tagsep">|</span>
-                        <a class="checkbox" target="_blank" 
+                        <a class="checkbox" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'JMP','event_action':'Click','event_label':'JMP Abstract'})">
                             <label for="jmp"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
-                        <a class="checkbox" target="_blank" 
+                        <a class="checkbox" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'JMP','event_action':'Click','event_label':'JMP Cite'})">
                             <label for="jmp_cite"><i class="fa-solid fa-quote-right"></i> cite</label></a><span class="tagsep">|</span>
                     </p>
 
                     <input type="checkbox" id="jmp" />
-                    <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #000">
+                    <p style="font-size: 11.5pt; color: var(--text-secondary);">
                         Using a New Zealand firm-level survey, I show that firms producing more goods have both
                         better information about inflation and more frequent but smaller price changes. To explain these
                         empirical findings, I develop a general equilibrium menu cost model with rationally inattentive
@@ -314,7 +331,7 @@
                     </p>
 
                     <input type="checkbox" id="jmp_cite" />
-                    <p style="font-size: 10pt; font-family: monospace; margin: 10px 20px; text-align: left; color: #000">
+                    <p style="font-size: 10pt; font-family: 'IBM Plex Mono', monospace; color: var(--text-primary);">
                         @article{Yang2022, <br>
                             &nbsp; title = {Rational inattention, menu costs, and multi-product firms: <br>
                             &nbsp; &nbsp; &nbsp; &nbsp;  Micro evidence and aggregate implications},<br>
@@ -335,29 +352,31 @@
 
                 <div class="py-1">
                     <p class="paper my-2 pl-2">
-                        <span class="" style="color: #000000">
+                        <span class="" style="color: var(--text-primary);">
                             <b>Local Scars of the US Housing Crisis</b>
-                        </span><br>
-                        <span class="conf pt-1""><a class="journal" href="https://doi.org/10.1016/j.jmoneco.2021.02.001" target="_blank"
+                        </span>
+                        <span class="badge-status badge-published">Published</span>
+                        <br>
+                        <span class="conf pt-1"><a class="journal" href="https://doi.org/10.1016/j.jmoneco.2021.02.001" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BSY','event_action':'Click','event_label':'BSY JME'})">
-                            <b><i>Journal of Monetary Economics</b></i></a>, April 2021, Vol. 119, 40–57.</span><br>
+                            <b><i>Journal of Monetary Economics</b></i></a>, April 2021, Vol. 119, 40&ndash;57.</span><br>
                         with
                         <a class="author" href="https://sites.google.com/site/bhattaraisaroj/" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Saroj'})">Saroj Bhattarai</a> and
                         <a class="author" href="https://sites.google.com/view/felipeschwartzman/" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Felipe'})">Felipe Schwartzman</a> <br>
-                
-                        <a class="tag" href="research/BSY_Scars.pdf" target="_blank" 
+
+                        <a class="tag" href="research/BSY_Scars.pdf" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BSY','event_action':'Click','event_label':'BSY PDF'})">
                             <i class="fa-regular fa-file"></i> pdf</a><span class="tagsep">|</span>
                         <a class="checkbox" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BSY','event_action':'Click','event_label':'BSY Abstract'})">
                             <label for="BSY"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
-                        <a class="checkbox" target="_blank" 
+                        <a class="checkbox" target="_blank"
                             onclick="gtag('event','Click',{'event_category': 'BSY','event_action':'Click','event_label':'BSY Cite'})">
                             <label for="BSY_cite"><i class="fa-solid fa-quote-right"></i> cite</label></a><span class="tagsep">|</span>
                         <i class="fa-solid fa-up-right-from-square"></i>
-                        <a class="tag" target="_blank" 
+                        <a class="tag" target="_blank"
                             href="https://www.richmondfed.org/-/media/richmondfedorg/publications/research/working_papers/2019/wp19-07.pdf"
                             onclick="gtag('event','Click',{'event_category': 'BSY','event_action':'Click','event_label':'BSY Richmond'})">
                             [Richmond Fed WP]</a>
@@ -365,7 +384,7 @@
 
 
                     <input type="checkbox" id="BSY" />
-                    <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #000">
+                    <p style="font-size: 11.5pt; color: var(--text-secondary);">
                         The 2006-09 US housing crisis had scarring local effects. For a given county, a housing shock generating
                         a 10% reduction in housing wealth from 2006 through 2009 led to a 4.4% decline in employment by 2018
                         and a commensurate decline in value added. This persistent local effect occurred despite the shock having
@@ -379,7 +398,7 @@
 
 
                     <input type="checkbox" id="BSY_cite" />
-                    <p style="font-size: 10pt; font-family: monospace; margin: 10px 20px; text-align: left; color: #000">
+                    <p style="font-size: 10pt; font-family: 'IBM Plex Mono', monospace; color: var(--text-primary);">
                         @article{BSY2021,<br>
                         &nbsp; title = {Local scars of the US housing crisis},<br>
                         &nbsp; journal = {Journal of Monetary Economics},<br>
@@ -395,30 +414,32 @@
                     </p>
                 </div>
 
-                <p class="header pt-4"><b>Working Papers</b></p>
+                <p class="header pt-4" id="working-papers"><b>Working Papers</b></p>
 
 
                     <div class="py-1">
                         <p class="paper my-2 pl-2">
-                            <span class="" style="color: #000000">
+                            <span class="" style="color: var(--text-primary);">
                                 <b>What Can Measured Beliefs Tell Us About Monetary Non-Neutrality?</b>
-                            </span><br>
+                            </span>
+                            <span class="badge-status badge-rr">R&R at AER</span>
+                            <br>
                             with
                             <a class="author" href="https://afrouzi.com/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Hassan'})">Hassan Afrouzi</a> and
                             <a class="author" href="https://joelflynn.com/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Joel'})">Joel P. Flynn</a>
                             <br>
-                    
+
                             Reject and resubmitted at <i><b>American Economic Review</b></i>
                             <br>
-                            
-                            <a class="tag" href="research/afy_selection.pdf" target="_blank" 
+
+                            <a class="tag" href="research/afy_selection.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AFY','event_action':'Click','event_label':'AFY PDF'})">
                                 <i class="fa-regular fa-file"></i> pdf (Jan &rsquo;26)</a><span class="tagsep">|</span>
-                            <a class="checkbox" target="_blank" 
+                            <a class="checkbox" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AFY','event_action':'Click','event_label':'AFY Abstract'})">
-								<label for="AFY_selection"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract </label></a><span class="tagsep">|</span>
+									<label for="AFY_selection"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract </label></a><span class="tagsep">|</span>
                             <i class="fa-solid fa-up-right-from-square"></i>
                             <a class="tag" target="_blank"
                                 href="https://www.nber.org/papers/w32541"
@@ -431,11 +452,11 @@
                         </p>
 
                         <input type="checkbox" id="AFY_selection" />
-                        <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #303030">
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
                             This paper studies how to use microeconomic data on beliefs and prices to identify the relative
-                            contributions of pricing and information frictions to monetary non-neutrality. 
+                            contributions of pricing and information frictions to monetary non-neutrality.
                             In a canonical general equilibrium model with both pricing frictions and information acquisition, we
-                            analytically characterize how these frictions contribute to non-neutrality. 
+                            analytically characterize how these frictions contribute to non-neutrality.
                             Exploiting this characterization, we show that data on the cross-sectional distributions of uncertainty and pricing
                             durations are necessary and sufficient to identify non-neutrality. Implementing our approach
                             in survey data, we find that: (i) information and pricing frictions are approximately equally
@@ -447,41 +468,79 @@
 
 
 
-                
                     <div class="py-1">
                         <p class="paper my-2 pl-2">
-                            <span class="" style="color: #000000">
+                            <span class="" style="color: var(--text-primary);">
+                                <b>The Rise of Inaction: Job Reallocation and the Declining Labor Share</b>
+                            </span>
+                            <span class="badge-status badge-wp">Working Paper</span>
+                            <br>
+                            with
+                            <a class="author" href="https://directory.msmary.edu/people/byunghee-choi.html" target="_blank"
+                                onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Byunghee'})">Byunghee Choi</a>
+                            <br>
+
+                            <a class="tag" href="research/CY_LS_JRR.pdf" target="_blank"
+                                onclick="gtag('event','Click',{'event_category': 'CY','event_action':'Click','event_label':'CY PDF'})">
+                                <i class="fa-regular fa-file"></i> pdf (Apr &rsquo;26)</a><span class="tagsep">|</span>
+                            <a class="checkbox" target="_blank"
+                                onclick="gtag('event','Click',{'event_category': 'CY','event_action':'Click','event_label':'CY Abstract'})">
+                                <label for="CY_LS_JRR"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
+                        </p>
+
+                        <input type="checkbox" id="CY_LS_JRR"/>
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
+                            Since 2000, the U.S. labor share and job reallocation rate have both fallen. We ask whether
+                            rising labor adjustment frictions can help explain this joint decline. We document a rise in
+                            establishment inaction and a shift toward smaller conditional employment changes, patterns
+                            consistent with kinked adjustment costs. In state-industry data, larger reallocation declines
+                            are associated with larger payroll-share declines, and the same cells with larger increases
+                            in establishment-level inaction also show larger declines in firm-level job reallocation and
+                            payroll shares. A calibrated firm-dynamics model disciplined by inaction can account for a
+                            meaningful share of both aggregate declines over the sample period.
+                        <br>
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="py-1">
+                        <p class="paper my-2 pl-2">
+                            <span class="" style="color: var(--text-primary);">
                                 <b>Land Development and Frictions to Housing Supply over the Business Cycle</b>
-                            </span><br>
+                            </span>
+                            <span class="badge-status badge-wp">Working Paper</span>
+                            <br>
                             with
                             <a class="author" href="https://sites.google.com/site/hyunseungoh/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Hyunseung'})">Hyunseung Oh</a> and
                             <a class="author" href="https://sites.google.com/site/chamnayoon/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Chamna'})">Chamna Yoon</a>
                             <br>
-                    
-                            <a class="tag" href="research/OYY_TTD.pdf" target="_blank" 
+
+                            <a class="tag" href="research/OYY_TTD.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'OYY','event_action':'Click','event_label':'OYY PDF'})">
                                 <i class="fa-regular fa-file"></i> pdf (Nov &rsquo;25)</a><span class="tagsep">|</span>
-                            <a class="checkbox" target="_blank" 
+                            <a class="checkbox" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'OYY','event_action':'Click','event_label':'OYY Abstract'})">
                                 <label for="OYY_TTD"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
                             <a class="tag" href="research/OYY_TTD_Appendix.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'OYY','event_action':'Click','event_label':'OYY Appendix'})">
                                 appendix</a><span class="tagsep">|</span>
-                            featured in <a class="tag" target="_blank"
+                            featured in <a class="featured-badge" target="_blank"
                                 href="https://www.bloomberg.com/news/newsletters/2024-02-16/odd-lots-newsletter-who-cares-when-the-rate-cuts-start"
                                 onclick="gtag('event','Click',{'event_category': 'OYY','event_action':'Click','event_label':'OYY Bloomberg'})">
                                 Bloomberg</a><span class="tagsep">|</span>
                             <i class="fa-solid fa-up-right-from-square"></i>
-                            <a class="tag" target="_blank" 
+                            <a class="tag" target="_blank"
                                 href="https://www.federalreserve.gov/econres/feds/land-development-and-frictions-to-housing-supply-over-the-business-cycle.htm"
                                 onclick="gtag('event','Click',{'event_category': 'OYY','event_action':'Click','event_label':'OYY FEDS'})">
                                 [FEDS WP]</a>
                         </p>
 
                         <input type="checkbox" id="OYY_TTD"/>
-                        <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #303030">
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
                             Using a novel dataset on U.S. residential land development, we document
                             that the average time-to-develop (TTD) for residential properties&mdash;which includes
                             both the time spent preparing land infrastructures and construction&mdash;is about three
@@ -498,37 +557,39 @@
                     </div>
 
 
-                    
+
                     <div class="py-1">
                         <p class="paper my-2 pl-2">
-                            <span class="" style="color: #000000">
+                            <span class="" style="color: var(--text-primary);">
                                 <b>Attention-Dependent Monetary Transmission to Household Beliefs</b>
-                            </span><br>
+                            </span>
+                            <span class="badge-status badge-wp">Working Paper</span>
+                            <br>
                             with
-                            <a class="author" 
+                            <a class="author"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Jaemin'})">Jaemin Jeong</a> and
                             <a class="author" href="https://sites.google.com/site/eunseongmaecon/eunseong-ma/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Eunseong'})">Eunseong Ma</a>
                             <br>
-                    
-                            <a class="tag" href="research/Attention_MP_v1.pdf" target="_blank" 
+
+                            <a class="tag" href="research/Attention_MP_v1.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'JMY','event_action':'Click','event_label':'JMY PDF'})">
                                 <i class="fa-regular fa-file"></i> pdf (Oct &rsquo;25)</a><span class="tagsep">|</span>
-                            <a class="checkbox" target="_blank" 
+                            <a class="checkbox" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'JMY','event_action':'Click','event_label':'JMY Abstract'})">
                                 <label for="JMY_Attention"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
                             <i class="fa-solid fa-up-right-from-square"></i>
-                            <a class="tag" href="https://www.federalreserve.gov/econres/feds/attention-dependent-monetary-transmission-to-household-beliefs.htm" target="_blank" 
+                            <a class="tag" href="https://www.federalreserve.gov/econres/feds/attention-dependent-monetary-transmission-to-household-beliefs.htm" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'JMY','event_action':'Click','event_label':'JMY FEDS'})">
                                 [FEDS WP]</a>
                         </p>
 
                         <input type="checkbox" id="JMY_Attention"/>
-                        <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #303030">
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
                             When do households listen to the Fed? We show the answer lies in a simple but powerful
                             force: household attention to macroeconomic conditions. We develop a model where attention acts as a crucial gatekeeper for the pass-through of policy news to beliefs, and confirm
                             its predictions using household survey data. We find that belief revisions to monetary policy
-                            surprises are concentrated among attentive individuals—particularly those with high financial stakes—and this effect strengthens dramatically during uncertain times. This implies the
+                            surprises are concentrated among attentive individuals&mdash;particularly those with high financial stakes&mdash;and this effect strengthens dramatically during uncertain times. This implies the
                             expectations channel is most potent when it matters most, suggesting policymakers should
                             account for the time-varying and heterogeneous nature of public attention.
                         <br>
@@ -541,84 +602,88 @@
 
                     <div class="py-1">
                         <p class="paper my-2 pl-2">
-                            <span class="" style="color: #000000">
+                            <span class="" style="color: var(--text-primary);">
                                 <b>Dynamic Rational Inattention and the Phillips Curve</b>
-                            </span><br>
+                            </span>
+                            <span class="badge-status badge-rr">R&R at AER</span>
+                            <br>
                             with
                             <a class="author" href="https://afrouzi.com/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Hassan'})">Hassan Afrouzi</a>
                             <br>
-                    
+
                             Reject and resubmit at <i><b>American Economic Review</b></i>
                             <br>
-                    
-                            <a class="tag" href="research/dynamic_inattention.pdf" target="_blank" 
-                                onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY PDF'})"> 
+
+                            <a class="tag" href="research/dynamic_inattention.pdf" target="_blank"
+                                onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY PDF'})">
                                 <i class="fa-regular fa-file"></i> pdf (Apr &rsquo;21)</a><span class="tagsep">|</span>
-                            <a class="checkbox" target="_blank" 
+                            <a class="checkbox" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY Abstract'})">
                                 <label for="AY"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
                             <i class="fa-solid fa-up-right-from-square"></i>
-                            <a class="tag" target="_blank" 
+                            <a class="tag" target="_blank"
                                 href="https://www.cesifo.org/en/publications/2021/working-paper/dynamic-rational-inattention-and-phillips-curve"
                                 onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY CESifo'})">
                                 [CESifo WP]</a>
                             <br>
-                            &mdash; <b>Documentation</b>: 
-                            <a class="tag" href="https://afrouzi.com/DRIPs.jl/dev/" target="_blank" 
+                            &mdash; <b>Documentation</b>:
+                            <a class="tag" href="https://afrouzi.com/DRIPs.jl/dev/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY Manual'})">html</a><span class="tagsep">|</span>
                             <a class="tag" href="research/DRIPs_manual.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY Manual PDF'})">pdf</a><span class="tagsep">|</span>
                             <br>
-                            &mdash; <b>Packages</b>: 
+                            &mdash; <b>Packages</b>:
                             <a class="tag" href="https://github.com/afrouzi/DRIPs.jl" target="_blank"
                                onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY Julia'})">Julia</a><span class="tagsep">|</span>
                             <a class="tag" href="https://github.com/choongryulyang/DRIPs.m" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY Matlab'})">Matlab</a><span class="tagsep">|</span>
                             <br>
-                            &mdash; <b>Jupyter Notebooks</b>: 
-                            <a class="tag" href="https://mybinder.org/v2/gh/afrouzi/DRIPs.jl/binder?filepath=examples", target="_blank"
+                            &mdash; <b>Jupyter Notebooks</b>:
+                            <a class="tag" href="https://mybinder.org/v2/gh/afrouzi/DRIPs.jl/binder?filepath=examples" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'AY','event_action':'Click','event_label':'AY jupyter'})">
 							    <img src="https://mybinder.org/badge_logo.svg" title="Dynamic RI in Julia" alt="Dynamic RI"></a>
                         </p>
 
                         <input type="checkbox" id="AY"/>
-                        <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #303030">
-                        We develop a fast, tractable, and robust method for solving the transition path of 
-                        dynamic rational inattention problems in linear-quadratic-Gaussian settings. 
-                        As an application of our general framework, we develop an attention-driven theory of 
-                        dynamic pricing in which the Phillips curve slope is endogenous to systematic aspects 
-                        of monetary policy. In our model, when the monetary authority is more committed to 
-                        stabilizing nominal variables, rationally inattentive firms pay less attention to changes 
-                        in their input costs, which leads to a flatter Phillips curve and more anchored 
-                        inflation expectations. This effect, however, is not symmetric. 
-                        A more dovish monetary policy flattens the Phillips curve in the short-run but generates 
-                        a steeper Phillips curve in the long-run. In a calibrated version of our general equilibrium model, 
-                        we find that our mechanism quantifies a 75% decline in the slope of the Phillips curve 
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
+                        We develop a fast, tractable, and robust method for solving the transition path of
+                        dynamic rational inattention problems in linear-quadratic-Gaussian settings.
+                        As an application of our general framework, we develop an attention-driven theory of
+                        dynamic pricing in which the Phillips curve slope is endogenous to systematic aspects
+                        of monetary policy. In our model, when the monetary authority is more committed to
+                        stabilizing nominal variables, rationally inattentive firms pay less attention to changes
+                        in their input costs, which leads to a flatter Phillips curve and more anchored
+                        inflation expectations. This effect, however, is not symmetric.
+                        A more dovish monetary policy flattens the Phillips curve in the short-run but generates
+                        a steeper Phillips curve in the long-run. In a calibrated version of our general equilibrium model,
+                        we find that our mechanism quantifies a 75% decline in the slope of the Phillips curve
                         in the post-Volcker period, relative to the period before it.
                         <br>
                         </p>
                     </div>
-                    
-                    
+
+
                     <div class="py-1">
                         <p class="paper my-2 pl-2">
-                            <span class="" style="color: #000000">
+                            <span class="" style="color: var(--text-primary);">
                                 <b>Shocks, Frictions, and Policy Regimes: Understanding Inflation after the COVID-19 Pandemic</b>
-                            </span><br>
+                            </span>
+                            <span class="badge-status badge-wp">Working Paper</span>
+                            <br>
                             with
                             <a class="author" href="https://www.kansascityfed.org/research-staff/taeyoung-doh/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Taeyoung'})">Taeyoung Doh</a>
                             <br>
-                    
-                            <a class="tag" href="research/DY_COVID_Inflation.pdf" target="_blank" 
+
+                            <a class="tag" href="research/DY_COVID_Inflation.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'DY','event_action':'Click','event_label':'DY PDF'})">
                                 <i class="fa-regular fa-file"></i> pdf (Sep &rsquo;24)</a><span class="tagsep">|</span>
-                            <a class="checkbox" target="_blank" 
+                            <a class="checkbox" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'DY','event_action':'Click','event_label':'DY Abstract'})">
-								<label for="DY_COVID_Inflation"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span> 
+									<label for="DY_COVID_Inflation"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
                             <i class="fa-solid fa-up-right-from-square"></i>
-                            <a class="tag" target="_blank" 
+                            <a class="tag" target="_blank"
                                 href="https://www.kansascityfed.org/research/research-working-papers/shocks-frictions-and-policy-regimes-understanding-inflation-after-the-covid-19-pandemic/"
                                 onclick="gtag('event','Click',{'event_category': 'DY','event_action':'Click','event_label':'DY KC Fed'})">
                                 [KC Fed WP]</a>
@@ -626,13 +691,13 @@
 
 
                         <input type="checkbox" id="DY_COVID_Inflation" />
-                        <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #303030">
-                            We set-up a two-sector New Keynesian model with input-output linkages and monetaryfiscal policy interactions to study the post-COVID-19 inflation. We test alternative calibrations
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
+                            We set-up a two-sector New Keynesian model with input-output linkages and monetary-fiscal policy interactions to study the post-COVID-19 inflation. We test alternative calibrations
                             of the model based on the fit of aggregate inflation, using shock estimates obtained by fitting
                             goods inflation. Our preferred model suggests that fiscal shocks not offset by monetary policy
                             account for the initial inflation surge in the first half of 2021 while supply-side shocks have
-                            emerged as main drivers of inflation since then. Multiple factors ("supply-side disruption",
-                            "expansionary policy", and "sectoral reallocation shock") played an important role at different
+                            emerged as main drivers of inflation since then. Multiple factors (&ldquo;supply-side disruption&rdquo;,
+                            &ldquo;expansionary policy&rdquo;, and &ldquo;sectoral reallocation shock&rdquo;) played an important role at different
                             phases of the recent inflationary episode.
                             <br>
                         </p>
@@ -643,41 +708,43 @@
 
                     <div class="py-1">
                         <p class="paper my-2 pl-2">
-                            <span class="" style="color: #000000">
+                            <span class="" style="color: var(--text-primary);">
                                 <b>Macroeconomic Effects of Capital Tax Rate Changes</b>
-                            </span><br>
+                            </span>
+                            <span class="badge-status badge-wp">Working Paper</span>
+                            <br>
                             with
                             <a class="author" href="https://sites.google.com/site/bhattaraisaroj/" target="_blank"
-                                onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Saroj'})">Saroj Bhattarai,</a> 
+                                onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Saroj'})">Saroj Bhattarai,</a>
                             <a class="author" href="https://sites.google.com/site/jwlee7/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Jae Won'})">Jae Won Lee,</a> and
                             <a class="author" href="https://sites.google.com/view/woongyongpark/" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Woong Yong'})">Woong Yong Park</a>
                             <br>
-                    
+
                             <a class="tag" href="research/CapitalTaxRateChanges_Website.pdf" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'BLPY','event_action':'Click','event_label':'BLPY PDF'})">
                                 <i class="fa-regular fa-file"></i> pdf (May &rsquo;22)</a><span class="tagsep">|</span>
-                            <a class="checkbox" target="_blank" 
+                            <a class="checkbox" target="_blank"
                                 onclick="gtag('event','Click',{'event_category': 'BLPY','event_action':'Click','event_label':'BLPY Abstract'})">
                                 <label for="BLPY"><i class="fa-solid fa-arrow-down-short-wide"></i> abstract</label></a><span class="tagsep">|</span>
                             <i class="fa-solid fa-up-right-from-square"></i>
-                            <a class="tag" target="_blank" 
+                            <a class="tag" target="_blank"
                                 href="https://www.federalreserve.gov/econres/feds/macroeconomic-effects-of-capital-tax-rate-changes.htm"
                                 onclick="gtag('event','Click',{'event_category': 'BLPY','event_action':'Click','event_label':'BLPY FEDS'})">
-                                [FEDS WP]</a> 
-                            <a class="tag" target="_blank" 
+                                [FEDS WP]</a>
+                            <a class="tag" target="_blank"
                                 href="https://doi.org/10.24149/gwp391"
                                 onclick="gtag('event','Click',{'event_category': 'BLPY','event_action':'Click','event_label':'BLPY Dallas Fed'})">
                                 [Dallas Fed WP]</a>
-                            <a class="tag" target="_blank" 
-                                href="https://www.cesifo.org/en/publications/2019/working-paper/macroeconomic-effects-capital-tax-rate-changes" 
+                            <a class="tag" target="_blank"
+                                href="https://www.cesifo.org/en/publications/2019/working-paper/macroeconomic-effects-capital-tax-rate-changes"
                                 onclick="gtag('event','Click',{'event_category': 'BLPY','event_action':'Click','event_label':'BLPY CESifo'})">
                                 [CESifo WP]</a>
                         </p>
 
                         <input type="checkbox" id="BLPY" />
-                        <p style="font-size: 12pt; margin: 10px 20px; text-align: left; color: #303030">
+                        <p style="font-size: 11.5pt; color: var(--text-secondary);">
                             We study aggregate, distributional, and welfare effects of a permanent reduction in the capital tax rate in
                             a dynamic equilibrium model with capital-skill complementarity. Such a tax reform leads to expansionary
                             long-run aggregate effects but is coupled with an increase in the skill premium. Moreover,
@@ -697,10 +764,25 @@
                     </div>
 
 
-        <p class="header pt-4"><b>Work in Progress</b></p>
+        <p class="header pt-4" id="work-in-progress"><b>Work in Progress</b></p>
                 <div class="py-1">
                     <p class="paper my-2 pl-2">
-                        <span class="" style="color: #000000">
+                        <span class="" style="color: var(--text-primary);">
+                            <b>Exchange Rate Transmission through Multinational Spillbacks: Japanese Evidence and a General Equilibrium Model</b>
+                        </span><br>
+                        with
+                        <a class="author" href="https://sites.google.com/view/ryansungryongkim/home/" target="_blank"
+                            onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Ryan'})">Ryan Kim,</a>
+                        <a class="author" href="https://scholar.google.com/citations?user=MB9VdC8AAAAJ&hl=en/" target="_blank"
+                            onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Bin'})">Bin Ni,</a> and
+                        <a class="author" href="https://sites.google.com/site/hyunseungoh/" target="_blank"
+                            onclick="gtag('event','Click',{'event_category': 'Coauthors','event_action':'Click','event_label':'Hyunseung'})">Hyunseung Oh</a>
+                    </p>
+                </div>
+
+                <div class="py-1">
+                    <p class="paper my-2 pl-2">
+                        <span class="" style="color: var(--text-primary);">
                             <b>Tax Shocks and Financial Heterogeneity</b>
                         </span><br>
                         with
@@ -711,7 +793,7 @@
 
                 <div class="py-1">
                     <p class="paper my-2 pl-2">
-                        <span class="" style="color: #000000">
+                        <span class="" style="color: var(--text-primary);">
                             <b>Income Inequality and Fiscal Multipliers</b>
                         </span><br>
                         with
@@ -722,18 +804,18 @@
 
         </div>
         </div>
-           
+
         </div>
     </div>
 
 
-    <footer style="margin-top:80px">
-        <div class="py-1 text-center">
-            <p style="font-size: 10pt; margin-top:10px;margin-bottom:10px;margin-left:10px;margin-right:10px; text-align: center; color:black">
+    <footer>
+        <div class="py-3 text-center">
+            <p style="font-size: 10pt; margin: 10px 20px; text-align: center; font-style: italic; color: var(--text-muted);">
                 The views expressed on this site are solely my own and should not be interpreted as reflecting the views of the Federal
                 Reserve Bank of Atlanta or of any person associated with the Federal Reserve System.
             </p>
-            <p style="margin-bottom:20px; font-size: 7pt; text-align: center">
+            <p style="margin-bottom:20px; font-size: 7pt; text-align: center; color: var(--text-muted);">
                 This design was inspired by the <a class="tag" target="_blank"
                     href="https://github.com/SebastinSanty/minimal-research-theme"
                     onclick="gtag('event','Click',{'event_category': 'WebDesign','event_action':'Click','event_label':'WebDesign'})">
