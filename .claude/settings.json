@@ -14,7 +14,8 @@
       "Bash(python -m http.server 8767)",
       "Bash(python -m http.server 8768)",
       "Bash(python -m http.server 8769)",
-      "Bash(start python:*)"
+      "Bash(start python:*)",
+      "WebFetch(domain:www.choongryul-yang.com)"
     ]
   }
 }
