@@ -66,6 +66,41 @@
         gtag('config', 'G-SLDPM89J8Z');
     </script>
 
+    <!-- PostHog -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+".people (stub)"}}),o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_xhzc7ivAV83tQYFgrtqVRCfRHYVTWkrfuqT6fzGvEhMG', {
+            api_host: 'https://us.i.posthog.com',
+            defaults: '2026-08-30',
+            person_profiles: 'always', // one profile per visitor: city, referrer, click timeline
+            capture_pageview: false,   // sent below, once the visitor's network is known
+            capture_pageleave: true,
+        });
+
+        // Look up the visitor's network (e.g. mit.edu) with IPinfo Lite, then send the pageview.
+        (function () {
+            var sent = false;
+            function sendPageview() {
+                if (sent) return;
+                sent = true;
+                posthog.capture('$pageview');
+            }
+            // Don't lose the pageview if the lookup is slow or blocked.
+            var timer = setTimeout(sendPageview, 1500);
+            fetch('https://api.ipinfo.io/lite/me?token=bf6f87f015448e')
+                .then(function (r) { return r.ok ? r.json() : null; })
+                .then(function (d) {
+                    if (d && d.as_domain) {
+                        var net = { network_domain: d.as_domain, network_name: d.as_name, network_asn: d.asn };
+                        posthog.register_for_session(net); // on every event in this visit
+                        posthog.setPersonProperties(net);  // on the visitor's profile
+                    }
+                })
+                .catch(function () {})
+                .then(function () { clearTimeout(timer); sendPageview(); });
+        })();
+    </script>
+
 
   </head>
   <body>
@@ -850,6 +885,7 @@
                     href="https://github.com/SebastinSanty/minimal-research-theme"
                     onclick="gtag('event','Click',{'event_category': 'WebDesign','event_action':'Click','event_label':'WebDesign'})">
                     Minimal Research Theme</a>.
+                IP address data is powered by <a class="tag" target="_blank" href="https://ipinfo.io">IPinfo</a>.
             </p>
         </div>
     </footer>
